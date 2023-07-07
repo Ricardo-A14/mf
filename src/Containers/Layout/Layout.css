@@ -1,0 +1,9 @@
+
+.layout {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: darksalmon;
+}

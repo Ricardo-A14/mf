@@ -1,0 +1,22 @@
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: slategray;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: 100vh;
+    flex-flow: wrap;
+    margin: 0 auto;
+
+    background-color: thistle;
+}
