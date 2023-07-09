@@ -5,16 +5,20 @@ import { useState } from "react";
 const useInitialState = () => {
 
     const [allProducts, setAllProducts] = useState([]);
-    const [filteredProduct, setFilteredProduct] = useState("");
+    const [getFilteredValue, setGetFilteredValue] = useState("");
+    const [filteredProducts, setFilteredProducts] = useState([]);
 
     const GetValue = (value) => {
-        setFilteredProduct(value);
+        setGetFilteredValue(value);
     }
 
     return {
         allProducts,
         setAllProducts,
-        filteredProduct,
+        getFilteredValue,
+        setGetFilteredValue,
+        filteredProducts,
+        setFilteredProducts,
         GetValue
     }
 }
