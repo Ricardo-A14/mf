@@ -1,10 +1,15 @@
 import "./ProductItem.css";
 
+import { useContext } from "react";
+import AppContext from "../../Context";
+
 const ProductItem = ({ product }) => {
+  const { GetProductDetails } = useContext(AppContext);
+
   return (
-    <div className="item">
+    <div className="item" onClick={() => GetProductDetails(product)}>
       <figure className="product-img">
-        <img src="" alt={product.title} />
+        <img src={product.image} alt={product.title} />
       </figure>
 
       <div className="product-info">
