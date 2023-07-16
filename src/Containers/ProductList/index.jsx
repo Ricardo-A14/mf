@@ -8,26 +8,22 @@ import "./ProductList.css";
 import ProductDetail from "../../Components/ProductDetail";
 
 const ProductList = () => {
-  const { openProductDetail, items, newItems, filteredValue } =
+  const { openProductDetail, items, filteredItems, searchByTitle } =
     useContext(AppContext);
 
   const HandleProducts = () => {
-    if (filteredValue.length == 0) {
-      return (
-        <>
-          {items.map((product) => {
-            return <ProductItem key={product.id} product={product} />;
-          })}
-        </>
-      );
+    if (searchByTitle.length > 0) {
+      if (filteredItems?.length > 0) {
+        return filteredItems.map((product) => {
+          return <ProductItem key={product.id} product={product} />;
+        });
+      } else {
+        return <div>El producto no existe.</div>;
+      }
     } else {
-      return (
-        <>
-          {newItems.map((product) => {
-            return <ProductItem key={product.id} product={product} />;
-          })}
-        </>
-      );
+      return items.map((product) => {
+        return <ProductItem key={product.id} product={product} />;
+      });
     }
   };
 

@@ -6,19 +6,17 @@ import product1 from "../assets/products/20221006_113015.jpg";
 
 const useInitialState = () => {
 
+    // Product detail
     const [openProductDetail, setOpenProductDetail] = useState(false);
     const [productDetails, setProductDetails] = useState([]);
 
+    // Items
     const [items, setItems] = useState([]);
+    const [filteredItems, setFilteredItems] = useState([]);
 
-    const [filteredValue, setFilteredValue] = useState("");
+    const [searchByTitle, setSearchByTitle] = useState("");
 
-    const GetFilteredValue = (value) => {
-        setFilteredValue(value);
-    }
 
-    // Testing 1
-    const [newItems, setNewItems] = useState([]);
 
     useEffect(() => {
         const productList = [
@@ -71,20 +69,27 @@ const useInitialState = () => {
     }, []);
 
 
-    // Testing 1
+    const FilteredItemsByTitle = (items, searchByTitle) => {
+
+        return items.filter((items) => {
+            return items.title.toLowerCase().includes(searchByTitle.toLowerCase())
+        })
+    }
+
     useEffect(() => {
 
-        const filtered = items.filter((newItem) => {
-            return newItem.title == filteredValue;
-        })
-        setNewItems(filtered);
-    }, [filteredValue, setFilteredValue]);
+        if (searchByTitle) {
+            setFilteredItems(FilteredItemsByTitle(items, searchByTitle))
+        }
+
+    }, [items, searchByTitle])
 
 
     const GetProductDetails = (product) => {
         setOpenProductDetail(true);
         setProductDetails(product);
     }
+
 
     return {
 
@@ -98,11 +103,11 @@ const useInitialState = () => {
         productDetails,
         setProductDetails,
 
-        filteredValue,
-        setFilteredValue,
-        GetFilteredValue,
+        searchByTitle,
+        setSearchByTitle,
 
-        newItems
+        filteredItems
+
     }
 }
 

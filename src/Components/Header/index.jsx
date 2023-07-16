@@ -5,7 +5,7 @@ import { useContext } from "react";
 import AppContext from "../../Context/index";
 
 const Header = () => {
-  const { GetFilteredValue } = useContext(AppContext);
+  const { setSearchByTitle } = useContext(AppContext);
 
   return (
     <div className="nav-position">
@@ -15,13 +15,13 @@ const Header = () => {
 
           <ul>
             <li>
-              <a href="">ancle1</a>
+              <a href="">anchor</a>
             </li>
             <li>
-              <a href="">ancle2</a>
+              <a href="">anchor</a>
             </li>
             <li>
-              <a href="">ancle3</a>
+              <a href="">anchor</a>
             </li>
           </ul>
         </div>
@@ -30,7 +30,7 @@ const Header = () => {
           <input
             type="text"
             placeholder="Buscar Producto"
-            onChange={(event) => GetFilteredValue(event.target.value)}
+            onChange={(event) => setSearchByTitle(event.target.value)}
           />
         </div>
       </nav>

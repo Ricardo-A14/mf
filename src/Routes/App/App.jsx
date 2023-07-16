@@ -1,5 +1,8 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Layout from "../../Containers/Layout";
 import Home from "../../Pages/Home";
+import About from "../../Pages/About";
 
 import "../../Styles/global.css";
 import "./App.css";
@@ -13,9 +16,14 @@ function App() {
   return (
     <div className="App">
       <AppContext.Provider value={initialState}>
-        <Layout>
-          <Home />
-        </Layout>
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route exact path="/mf" element={<Home />} />
+              <Route exact path="/mf/about" element={<About />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
       </AppContext.Provider>
     </div>
   );
