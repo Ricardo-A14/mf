@@ -1,11 +1,13 @@
 import "./Navbar.css";
 
+import { NavLink } from "react-router-dom";
+
 import { useContext } from "react";
 
 import AppContext from "../../Context/index";
 
 const Header = () => {
-  const { setSearchByTitle } = useContext(AppContext);
+  const { setSearchByTitle, setSearchByCategory } = useContext(AppContext);
 
   return (
     <div className="nav-position">
@@ -15,13 +17,27 @@ const Header = () => {
 
           <ul>
             <li>
-              <a href="">anchor</a>
+              <NavLink to="/mf" onClick={() => setSearchByCategory()}>
+                All
+              </NavLink>
             </li>
+
             <li>
-              <a href="">anchor</a>
+              <NavLink
+                to="/maquillaje"
+                onClick={() => setSearchByCategory("maquillaje")}
+              >
+                Maquillaje
+              </NavLink>
             </li>
+
             <li>
-              <a href="">anchor</a>
+              <NavLink
+                to="/labiales"
+                onClick={() => setSearchByCategory("labiales")}
+              >
+                Labiales
+              </NavLink>
             </li>
           </ul>
         </div>

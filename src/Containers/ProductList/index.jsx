@@ -12,18 +12,12 @@ const ProductList = () => {
     useContext(AppContext);
 
   const HandleProducts = () => {
-    if (searchByTitle.length > 0) {
-      if (filteredItems?.length > 0) {
-        return filteredItems.map((product) => {
-          return <ProductItem key={product.id} product={product} />;
-        });
-      } else {
-        return <div>El producto no existe.</div>;
-      }
-    } else {
-      return items.map((product) => {
+    if (filteredItems?.length > 0) {
+      return filteredItems.map((product) => {
         return <ProductItem key={product.id} product={product} />;
       });
+    } else {
+      return <div>El producto no existe.</div>;
     }
   };
 
