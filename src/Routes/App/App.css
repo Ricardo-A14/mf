@@ -1,7 +1,8 @@
 
 .App {
-    width: 98%;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     margin: 0 auto;
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
+    background-color: #FFFFFF;
 }

@@ -13,7 +13,13 @@ const Header = () => {
     <div className="nav-position">
       <nav className="nav-container">
         <div className="navbar-left">
-          <h1>MAGIC FACE</h1>
+          <div className="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <h1 className="mf-title">MAGIC FACE</h1>
 
           <ul>
             <li>

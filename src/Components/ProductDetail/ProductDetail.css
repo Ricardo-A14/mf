@@ -4,12 +4,14 @@
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
-    height: 300px;
+    height: 50vh;
     position: fixed;
     top: 60px;
     right: 0;
     padding: 20px 0;
-    background-color: cadetblue;
+    border: 1px solid darkgray;
+    background-color: #FFFFFF;
+    
 }
 .close-product-detail {
     position: absolute;
@@ -21,7 +23,7 @@
 
 .product-detail-img {
     width: 90%;
-    height: 40%;
+    height: 60%;
     margin: 0 auto;
     background-color: cornflowerblue;
 }
@@ -30,11 +32,18 @@
     height: 100%;
 }
 
-.product-info {
+.aside-product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 90%;
     height: 40%;
     margin: 0 auto;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+}
+
+.aside-product-info span {
+    margin: 4px;
 }
 
 
