@@ -9,13 +9,13 @@ const ProductItem = ({ product }) => {
   return (
     <div className="item" onClick={() => GetProductDetails(product)}>
       <figure className="product-img">
-        <img src={product.image} alt={product.title} />
+        <img src={product.image[0]} alt={product.title} />
       </figure>
 
       <div className="product-info">
         <div className="div-info">
-          <p>{product.title}</p>
-          <p>${product.price}</p>
+          <p className="title">{product.title}</p>
+          <p className="price">$ {product.price}</p>
         </div>
 
         {/* <figure className="icon-cart">

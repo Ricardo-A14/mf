@@ -1,3 +1,4 @@
+
 import "./Navbar.css";
 
 import { NavLink } from "react-router-dom";
@@ -51,9 +52,9 @@ const Header = () => {
             <li>
               <NavLink
                 to="/labiales"
-                onClick={() => setSearchByCategory("labiales")}
+                onClick={() => setSearchByCategory("skincare")}
               >
-                Labiales
+                Skincare
               </NavLink>
             </li>
           </ul>

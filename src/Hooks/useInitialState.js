@@ -1,7 +1,21 @@
 
 import { useState, useEffect } from "react";
 
-import product1 from "../assets/products/20221006_113015.jpg";
+// IMAGES.
+
+// Paleta fells soft nude.
+import p_feelsSoftNude_1 from '../assets/Products/ProductsWithCategories/PaletaFeelsSoftNude/feelsSoftNude_1.png';
+import p_feelsSoftNude_2 from '../assets/Products/ProductsWithCategories/PaletaFeelsSoftNude/feelsSoftNude_2.png';
+const feelsSoftNude = [p_feelsSoftNude_1, p_feelsSoftNude_2];
+
+// Primer facial perfect skin.
+import primer_facial from '../assets/Products/OneProduct/Primer/PrimerFacialSkinPerfect.png';
+const primer = [primer_facial];
+
+// POLVO TRANSLÚCIDO FEELS
+import polvoTranslucido_1 from '../assets/Products/OneProduct/PolvoTranslucido/PolvoTranslucido_1.png';
+const polvoTranslucido = [polvoTranslucido_1]
+
 
 
 const useInitialState = () => {
@@ -28,56 +42,34 @@ const useInitialState = () => {
         const productList = [
             {
                 id: 1,
-                title: `Maquillaje 1`,
-                price: 100,
-                description: `sdfhsdh sdhsdfh sdhsdh sdtjhstrj tukrtuykrtyk etyetyj reuwrtu rtuwru wruweru ertuwertu ertuertu ertuertu ertuertu eruertuertueyu erueryueyueyu erueru PRODUCT DESCRIPTION 1`,
-                image: `${product1}`,
+                title: `PALETA DE SOMBRAS FEELS SOFT NUDE`,
+                price: 50_000,
+                description: `Tiene 17 tonos con maravillosos tonos nude y rosa, además, 1 primer de ojos, ofreciendote infinitas posibilidades de maquillaje.
+                Soft Nude es de alta pigmentación, con una textura súper aterciopelada y suave.`,
+                image: feelsSoftNude,
                 category: "maquillaje"
             },
             {
                 id: 2,
-                title: `Maquillaje 2`,
-                price: 200,
-                description: `PRODUCT DESCRIPTION 2`,
-                image: `${product1}`,
-                category: "maquillaje"
+                title: `PRIMER FACIAL SKIN PERFECT`,
+                price: 29_000,
+                description: `Gran aliado para tu maquillaje, tiene una textura de silicona, suaviza la piel, minimiza la apariencia de los poros al hacer una capa delgada en la piel.`,
+                image: primer,
+                category: "skincare"
 
             },
             {
                 id: 3,
-                title: `Maquillaje 1`,
-                price: 300,
-                description: `PRODUCT DESCRIPTION 3`,
-                image: `${product1}`,
+                title: `POLVO TRANSLÚCIDO FEELS`,
+                price: 28_000,
+                description: `Tiene un acabado mate, una textura ultrafina y ligera que disimula pequeñas imperfecciones, dejando la piel seca y libre de grasa.
+                ¡Se adapta a todos los tonos de piel.`,
+                image: polvoTranslucido,
                 category: "maquillaje"
 
             },
-            {
-                id: 4,
-                title: `Labial 1`,
-                price: 400,
-                description: `PRODUCT DESCRIPTION 4`,
-                image: `${product1}`,
-                category: "labiales"
-            },
-            {
-                id: 5,
-                title: `Labial 2`,
-                price: 500,
-                description: `PRODUCT DESCRIPTION 5`,
-                image: `${product1}`,
-                category: "labiales"
 
-            },
-            {
-                id: 6,
-                title: `Labial 3`,
-                price: 600,
-                description: `PRODUCT DESCRIPTION 6`,
-                image: `${product1}`,
-                category: "labiales"
 
-            },
         ];
         setItems(productList);
     }, []);

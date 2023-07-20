@@ -12,7 +12,7 @@ const MobileMenu = () => {
     <div className="mobile-menu">
       <ul>
         <li>
-          <NavLink to="/mf" onClick={() => HandleActiveMenu(null)}>
+          <NavLink to="/mf/" onClick={() => HandleActiveMenu(null)}>
             All
           </NavLink>
         </li>
@@ -26,8 +26,8 @@ const MobileMenu = () => {
         </li>
 
         <li>
-          <NavLink to="/labiales" onClick={() => HandleActiveMenu("labiales")}>
-            Labiales
+          <NavLink to="/labiales" onClick={() => HandleActiveMenu("skincare")}>
+            Skincare
           </NavLink>
         </li>
       </ul>

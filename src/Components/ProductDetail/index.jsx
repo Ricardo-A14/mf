@@ -3,6 +3,9 @@ import AppContext from "../../Context/index";
 
 import "./ProductDetail.css";
 
+import { XMarkIcon } from '@heroicons/react/24/solid';
+
+
 const ProductDetail = () => {
   const { setOpenProductDetail, productDetails } = useContext(AppContext);
 
@@ -12,15 +15,17 @@ const ProductDetail = () => {
         className="close-product-detail"
         onClick={() => setOpenProductDetail(false)}
       >
-        x
+        <XMarkIcon className="icon-x" />
       </div>
+
       <figure className="product-detail-img">
-        <img src={productDetails.image} alt="dfj" />
+        <img src={productDetails.image[0]} alt="dfj" />
       </figure>
+
       <div className="aside-product-info">
-        <span>{productDetails.title}</span>
-        <span>$ {productDetails.price}</span>
-        <span>{productDetails.description}</span>
+        <span className="title">{productDetails.title}</span>
+        <span className="price">$ {productDetails.price}</span>
+        <span className="description">{productDetails.description}</span>
       </div>
     </aside>
   );
