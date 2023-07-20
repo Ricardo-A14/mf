@@ -7,7 +7,7 @@
     border-bottom: 1px solid #C7C7C7;
 }
 
-.mobile-menu {
+.mobile-icon {
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -19,7 +19,7 @@
     border-radius: 2px;
     /* background-color: darkgoldenrod; */
 }
-.mobile-menu div {
+.mobile-icon div {
     width: 90%;
     height: 4px;
     border-radius: 4px;
@@ -58,6 +58,7 @@
     align-items: center;
     width: 50%;
     height: 40%;
+    padding: 0;
     /* background-color: chocolate; */
 }
 
@@ -100,7 +101,7 @@
     
     }
 
-    .mobile-menu {
+    .mobile-icon {
         display: flex;
     }
 }

@@ -8,8 +8,7 @@ import "./ProductList.css";
 import ProductDetail from "../../Components/ProductDetail";
 
 const ProductList = () => {
-  const { openProductDetail, items, filteredItems, searchByTitle } =
-    useContext(AppContext);
+  const { openProductDetail, filteredItems } = useContext(AppContext);
 
   const HandleProducts = () => {
     if (filteredItems?.length > 0) {

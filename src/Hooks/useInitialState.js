@@ -20,6 +20,9 @@ const useInitialState = () => {
     // Get products by category
     const [searchByCategory, setSearchByCategory] = useState("");
 
+    // Active mobile menu
+    const [activeMobileMenu, setActiveMobileMenu] = useState(false);
+
     // Get Products
     useEffect(() => {
         const productList = [
@@ -79,6 +82,11 @@ const useInitialState = () => {
         setItems(productList);
     }, []);
 
+    const HandleActiveMenu = (category) => {
+        setSearchByCategory(category);
+        setActiveMobileMenu(false);
+    }
+
 
     const FilteredItemsByTitle = (items, searchByTitle) => {
         return items.filter((items) => {
@@ -137,7 +145,6 @@ const useInitialState = () => {
         setProductDetails(product);
     }
 
-    console.log(filteredItems);
 
     return {
 
@@ -156,7 +163,12 @@ const useInitialState = () => {
 
         filteredItems,
 
-        setSearchByCategory
+        setSearchByCategory,
+
+        activeMobileMenu,
+        setActiveMobileMenu,
+
+        HandleActiveMenu
 
     }
 }
