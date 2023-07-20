@@ -63,7 +63,9 @@ const Header = () => {
           <input
             type="text"
             placeholder="Buscar Producto"
-            onChange={(event) => setSearchByTitle(event.target.value)}
+            onChange={(event) =>
+              setSearchByTitle(event.target.value.toLowerCase())
+            }
           />
         </div>
       </nav>

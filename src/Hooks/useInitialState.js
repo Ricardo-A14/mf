@@ -30,7 +30,7 @@ const useInitialState = () => {
                 id: 1,
                 title: `Maquillaje 1`,
                 price: 100,
-                description: `Product description 1`,
+                description: `sdfhsdh sdhsdfh sdhsdh sdtjhstrj tukrtuykrtyk etyetyj reuwrtu rtuwru wruweru ertuwertu ertuertu ertuertu ertuertu eruertuertueyu erueryueyueyu erueru PRODUCT DESCRIPTION 1`,
                 image: `${product1}`,
                 category: "maquillaje"
             },
@@ -38,7 +38,7 @@ const useInitialState = () => {
                 id: 2,
                 title: `Maquillaje 2`,
                 price: 200,
-                description: `Product description 2`,
+                description: `PRODUCT DESCRIPTION 2`,
                 image: `${product1}`,
                 category: "maquillaje"
 
@@ -47,7 +47,7 @@ const useInitialState = () => {
                 id: 3,
                 title: `Maquillaje 1`,
                 price: 300,
-                description: `Product description 3`,
+                description: `PRODUCT DESCRIPTION 3`,
                 image: `${product1}`,
                 category: "maquillaje"
 
@@ -56,7 +56,7 @@ const useInitialState = () => {
                 id: 4,
                 title: `Labial 1`,
                 price: 400,
-                description: `Product description 4`,
+                description: `PRODUCT DESCRIPTION 4`,
                 image: `${product1}`,
                 category: "labiales"
             },
@@ -64,7 +64,7 @@ const useInitialState = () => {
                 id: 5,
                 title: `Labial 2`,
                 price: 500,
-                description: `Product description 5`,
+                description: `PRODUCT DESCRIPTION 5`,
                 image: `${product1}`,
                 category: "labiales"
 
@@ -73,7 +73,7 @@ const useInitialState = () => {
                 id: 6,
                 title: `Labial 3`,
                 price: 600,
-                description: `Product description 6`,
+                description: `PRODUCT DESCRIPTION 6`,
                 image: `${product1}`,
                 category: "labiales"
 
@@ -83,7 +83,7 @@ const useInitialState = () => {
     }, []);
 
     const HandleActiveMenu = (category) => {
-        setSearchByCategory(category);
+        setSearchByCategory(category.toLowerCase());
         setActiveMobileMenu(false);
     }
 

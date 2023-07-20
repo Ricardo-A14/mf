@@ -19,7 +19,7 @@ const ProductDetail = () => {
       </figure>
       <div className="aside-product-info">
         <span>{productDetails.title}</span>
-        <span>{productDetails.price}</span>
+        <span>$ {productDetails.price}</span>
         <span>{productDetails.description}</span>
       </div>
     </aside>
