@@ -4,10 +4,15 @@
     justify-content: space-between;
     width: 240px;
     height: 298px;
-    margin: 14px;
-    border-radius: 15px;
-    border: 1px solid darkgray;
+    margin: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
     /* background-color: slategray; */
+}
+
+.item:hover {
+    border: 1px solid darkgray;
+
 }
 
 .product-img {

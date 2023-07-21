@@ -3,18 +3,28 @@ import { useState, useEffect } from "react";
 
 // IMAGES.
 
-// Paleta fells soft nude.
+// FEELS SOFT NUDE PALETTE.
 import p_feelsSoftNude_1 from '../assets/Products/ProductsWithCategories/PaletaFeelsSoftNude/feelsSoftNude_1.png';
 import p_feelsSoftNude_2 from '../assets/Products/ProductsWithCategories/PaletaFeelsSoftNude/feelsSoftNude_2.png';
-const feelsSoftNude = [p_feelsSoftNude_1, p_feelsSoftNude_2];
+const feelsSoftNude = [p_feelsSoftNude_1, p_feelsSoftNude_2, p_feelsSoftNude_2];
 
-// Primer facial perfect skin.
+// PRIMER FACIAL PERFECT SKIN.
 import primer_facial from '../assets/Products/OneProduct/Primer/PrimerFacialSkinPerfect.png';
-const primer = [primer_facial];
+const primer = [primer_facial, primer_facial, primer_facial];
 
-// POLVO TRANSLÚCIDO FEELS
+// POLVO TRANSLÚCIDO FEELS.
 import polvoTranslucido_1 from '../assets/Products/OneProduct/PolvoTranslucido/PolvoTranslucido_1.png';
-const polvoTranslucido = [polvoTranslucido_1]
+const polvoTranslucido = [polvoTranslucido_1, polvoTranslucido_1, polvoTranslucido_1];
+
+// HELLO MERMAID PALETTE.
+import helloMermaid_1 from '../assets/Products/ProductsWithCategories/PaletteHelloMermaid/HelloMermaid_1.png';
+import helloMermaid_2 from '../assets/Products/ProductsWithCategories/PaletteHelloMermaid/HelloMermaid_2.png';
+import helloMermaid_3 from '../assets/Products/ProductsWithCategories/PaletteHelloMermaid/HelloMermaid_3.png';
+const helloMermaid = [helloMermaid_1, helloMermaid_2, helloMermaid_3];
+
+import paradise_p from '../assets/Products/ProductsWithCategories/PaletteParadise/Paradise.png'
+const paradise = [paradise_p, paradise_p, paradise_p];
+
 
 
 
@@ -42,7 +52,7 @@ const useInitialState = () => {
         const productList = [
             {
                 id: 1,
-                title: `PALETA DE SOMBRAS FEELS SOFT NUDE`,
+                title: `PALETA DE SOMBRAS FEELS SOFT NUDE RUBY ROSE`,
                 price: 50_000,
                 description: `Tiene 17 tonos con maravillosos tonos nude y rosa, además, 1 primer de ojos, ofreciendote infinitas posibilidades de maquillaje.
                 Soft Nude es de alta pigmentación, con una textura súper aterciopelada y suave.`,
@@ -51,15 +61,6 @@ const useInitialState = () => {
             },
             {
                 id: 2,
-                title: `PRIMER FACIAL SKIN PERFECT`,
-                price: 29_000,
-                description: `Gran aliado para tu maquillaje, tiene una textura de silicona, suaviza la piel, minimiza la apariencia de los poros al hacer una capa delgada en la piel.`,
-                image: primer,
-                category: "skincare"
-
-            },
-            {
-                id: 3,
                 title: `POLVO TRANSLÚCIDO FEELS`,
                 price: 28_000,
                 description: `Tiene un acabado mate, una textura ultrafina y ligera que disimula pequeñas imperfecciones, dejando la piel seca y libre de grasa.
@@ -68,6 +69,40 @@ const useInitialState = () => {
                 category: "maquillaje"
 
             },
+            {
+                id: 3,
+                title: `PALETA DE SOMBRAS HELLO MERMAID ANYLADY`,
+                price: 42_000,
+                description: `Paleta de sombras con 57 tonos,
+                acabado mate y satinado,
+                calidad profesional,
+                excelente pigmentación,
+                fáciles de difuminar,
+                de larga duración,
+                se adhieren muy bien al párpado.`,
+                image: helloMermaid,
+                category: "maquillaje"
+
+            },
+            {
+                id: 4,
+                title: `PALETA DE SOMBRAS PARADISE ANYLADY`,
+                price: 42_000,
+                description: `Paleta de sombras con 35 tonos`,
+                image: paradise,
+                category: "maquillaje"
+
+            },
+            {
+                id: 5,
+                title: `PRIMER FACIAL SKIN PERFECT`,
+                price: 29_000,
+                description: `Gran aliado para tu maquillaje, tiene una textura de silicona, suaviza la piel, minimiza la apariencia de los poros al hacer una capa delgada en la piel.`,
+                image: primer,
+                category: "skincare"
+
+            },
+
 
 
         ];
