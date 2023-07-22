@@ -7,25 +7,30 @@ import { useState, useEffect } from "react";
 import p_feelsSoftNude_1 from '../assets/Products/ProductsWithCategories/PaletaFeelsSoftNude/feelsSoftNude_1.png';
 import p_feelsSoftNude_2 from '../assets/Products/ProductsWithCategories/PaletaFeelsSoftNude/feelsSoftNude_2.png';
 const feelsSoftNude = [p_feelsSoftNude_1, p_feelsSoftNude_2, p_feelsSoftNude_2];
-
 // PRIMER FACIAL PERFECT SKIN.
 import primer_facial from '../assets/Products/OneProduct/Primer/PrimerFacialSkinPerfect.png';
 const primer = [primer_facial, primer_facial, primer_facial];
-
 // POLVO TRANSLÚCIDO FEELS.
 import polvoTranslucido_1 from '../assets/Products/OneProduct/PolvoTranslucido/PolvoTranslucido_1.png';
 const polvoTranslucido = [polvoTranslucido_1, polvoTranslucido_1, polvoTranslucido_1];
-
 // HELLO MERMAID PALETTE.
 import helloMermaid_1 from '../assets/Products/ProductsWithCategories/PaletteHelloMermaid/HelloMermaid_1.png';
 import helloMermaid_2 from '../assets/Products/ProductsWithCategories/PaletteHelloMermaid/HelloMermaid_2.png';
 import helloMermaid_3 from '../assets/Products/ProductsWithCategories/PaletteHelloMermaid/HelloMermaid_3.png';
 const helloMermaid = [helloMermaid_1, helloMermaid_2, helloMermaid_3];
-
+// PARADISE PALETTE.
 import paradise_p from '../assets/Products/ProductsWithCategories/PaletteParadise/Paradise.png'
 const paradise = [paradise_p, paradise_p, paradise_p];
-
-
+// VARIED QUEEN PALEET.
+import donutsPaleet_1 from '../assets/Products/ProductsWithCategories/PaleetVariedQueen/DonutsPalette.png';
+const donutsPaleet = [donutsPaleet_1, donutsPaleet_1, donutsPaleet_1];
+// VITAMIN C BIOAQUA.
+import vitamin_1 from '../assets/Products/OneProduct/VCBioAqua/VCBioaqua_1.png';
+import vitamin_2 from '../assets/Products/OneProduct/VCBioAqua/VCBioaqua_2.png';
+const vitaminC = [vitamin_1, vitamin_2, vitamin_2];
+// ANTI WRINKLE EYE CREAM.
+import antyWrinkle from '../assets/Products/OneProduct/CremaOjosAEnvejecimiento/AntiWrinkleEyeCream.png';
+const eyeCream = [antyWrinkle, antyWrinkle, antyWrinkle];
 
 
 const useInitialState = () => {
@@ -61,16 +66,6 @@ const useInitialState = () => {
             },
             {
                 id: 2,
-                title: `POLVO TRANSLÚCIDO FEELS`,
-                price: 28_000,
-                description: `Tiene un acabado mate, una textura ultrafina y ligera que disimula pequeñas imperfecciones, dejando la piel seca y libre de grasa.
-                ¡Se adapta a todos los tonos de piel.`,
-                image: polvoTranslucido,
-                category: "maquillaje"
-
-            },
-            {
-                id: 3,
                 title: `PALETA DE SOMBRAS HELLO MERMAID ANYLADY`,
                 price: 42_000,
                 description: `Paleta de sombras con 57 tonos,
@@ -85,7 +80,7 @@ const useInitialState = () => {
 
             },
             {
-                id: 4,
+                id: 3,
                 title: `PALETA DE SOMBRAS PARADISE ANYLADY`,
                 price: 42_000,
                 description: `Paleta de sombras con 35 tonos`,
@@ -94,11 +89,51 @@ const useInitialState = () => {
 
             },
             {
+                id: 4,
+                title: `PALETA DE SOMBRAS VARIED QUEEN`,
+                price: 46_000,
+                description: `Paleta de sombras donuts varied
+                con 80 tonos.`,
+                image: donutsPaleet,
+                category: "maquillaje"
+
+            },
+            {
                 id: 5,
+                title: `POLVO TRANSLÚCIDO FEELS`,
+                price: 28_000,
+                description: `Tiene un acabado mate, una textura ultrafina y ligera que disimula pequeñas imperfecciones, dejando la piel seca y libre de grasa.
+                ¡Se adapta a todos los tonos de piel.`,
+                image: polvoTranslucido,
+                category: "maquillaje"
+
+            },
+
+            // SkinCare
+            {
+                id: 6,
                 title: `PRIMER FACIAL SKIN PERFECT`,
                 price: 29_000,
                 description: `Gran aliado para tu maquillaje, tiene una textura de silicona, suaviza la piel, minimiza la apariencia de los poros al hacer una capa delgada en la piel.`,
                 image: primer,
+                category: "skincare"
+
+            },
+            {
+                id: 7,
+                title: `SUERO VITAMINA C BIOAQUA 100 ml`,
+                price: 20_000,
+                description: `Para todo tipo de piel`,
+                image: vitaminC,
+                category: "skincare"
+
+            },
+            {
+                id: 8,
+                title: `CREMA CONTORNO DE OJOS ANTI ENVEJECIMIENTO BIOAQUA.`,
+                price: '',
+                description: `producto de belleza diseñado para cuidar y tratar la piel alrededor de los ojos. Esta área de la piel es conocida por ser más delicada y propensa a la aparición de arrugas, y otros signos de envejecimiento.`,
+                image: eyeCream,
                 category: "skincare"
 
             },
