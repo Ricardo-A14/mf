@@ -31,6 +31,23 @@ const vitaminC = [vitamin_1, vitamin_2, vitamin_2];
 // ANTI WRINKLE EYE CREAM.
 import antyWrinkle from '../assets/Products/OneProduct/CremaOjosAEnvejecimiento/AntiWrinkleEyeCream.png';
 const eyeCream = [antyWrinkle, antyWrinkle, antyWrinkle];
+// POLVO BRONCEADOR DUAL.
+import polvoBronceadorD_1 from '../assets/Products/OneProduct/PolvoBronceador/PressedPowder_1.png';
+import polvoBronceadorD_2 from '../assets/Products/OneProduct/PolvoBronceador/PressedPowder_2.png';
+const polvoBronceador = [polvoBronceadorD_1, polvoBronceadorD_2, polvoBronceadorD_2];
+// HYALURONIC ACID.
+import hyaluronicAcid_1 from '../assets/Products/OneProduct/WaterGel/HyaluronicAcid_1.png';
+import hyaluronicAcid_2 from '../assets/Products/OneProduct/WaterGel/HyaluronicAcid_2.png';
+const waterGel = [hyaluronicAcid_1, hyaluronicAcid_2, hyaluronicAcid_2];
+// EXFOLIANTE DE ARROZ.
+import exfoliante_1 from '../assets/Products/OneProduct/ExfolianteArroz/ExfolianteArroz_1.png';
+import exfoliante_2 from '../assets/Products/OneProduct/ExfolianteArroz/ExfolianteArroz_2.png';
+const exfolianteArroz = [exfoliante_1, exfoliante_2, exfoliante_2];
+// SOMBRA PARA OJOS ANYLADY.
+import sombraOjos_1 from '../assets/Products/ProductsWithCategories/SombraOjos/SombraOjos_1.png';
+import sombraOjos_2 from '../assets/Products/ProductsWithCategories/SombraOjos/SombraOjos_2.png';
+import sombraOjos_3 from '../assets/Products/ProductsWithCategories/SombraOjos/SombraOjos_3.png';
+const sombrasOjos = [sombraOjos_1, sombraOjos_2, sombraOjos_3];
 
 
 const useInitialState = () => {
@@ -108,10 +125,28 @@ const useInitialState = () => {
                 category: "maquillaje"
 
             },
+            {
+                id: 6,
+                title: `POLVO BRONCEADOR DUAL.`,
+                price: 22_000,
+                description: `Polvo compacto bronceador con tono shimmer y mate dando un acabado perfecto a tu piel. Incluye un lado matte y un lado satinado, Alta durabilidad, Ideal para todos los tonos y tipos de piel`,
+                image: polvoBronceador,
+                category: "maquillaje"
+
+            },
+            {
+                id: 7,
+                title: `SOMBRA PARA OJOS ANYLADY.`,
+                price: '',
+                description: `Producto de alta calidad.`,
+                image: sombrasOjos,
+                category: "maquillaje"
+
+            },
 
             // SkinCare
             {
-                id: 6,
+                id: 8,
                 title: `PRIMER FACIAL SKIN PERFECT`,
                 price: 29_000,
                 description: `Gran aliado para tu maquillaje, tiene una textura de silicona, suaviza la piel, minimiza la apariencia de los poros al hacer una capa delgada en la piel.`,
@@ -120,7 +155,7 @@ const useInitialState = () => {
 
             },
             {
-                id: 7,
+                id: 9,
                 title: `SUERO VITAMINA C BIOAQUA 100 ml`,
                 price: 20_000,
                 description: `Para todo tipo de piel`,
@@ -129,11 +164,29 @@ const useInitialState = () => {
 
             },
             {
-                id: 8,
+                id: 10,
                 title: `CREMA CONTORNO DE OJOS ANTI ENVEJECIMIENTO BIOAQUA.`,
-                price: '',
+                price: 15_000,
                 description: `producto de belleza diseñado para cuidar y tratar la piel alrededor de los ojos. Esta área de la piel es conocida por ser más delicada y propensa a la aparición de arrugas, y otros signos de envejecimiento.`,
                 image: eyeCream,
+                category: "skincare"
+
+            },
+            {
+                id: 11,
+                title: `ÁCIDO HIALURÓNICO BIOAQUA.`,
+                price: '',
+                description: `Hidratante y humectante, preventivo y correctivo de las arrugas, para todas las pieles, especialmente las secas.`,
+                image: waterGel,
+                category: "skincare"
+
+            },
+            {
+                id: 12,
+                title: `EXFOLIANTE DE ARROZ BIOACUA.`,
+                price: '',
+                description: `Una buena exfoliación previene el envejecimiento prematuro de la piel.`,
+                image: exfolianteArroz,
                 category: "skincare"
 
             },
