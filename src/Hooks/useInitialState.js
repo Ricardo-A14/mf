@@ -31,7 +31,10 @@ const vitaminC = [vitamin_1, vitamin_2, vitamin_2];
 // ANTI WRINKLE EYE CREAM.
 import antyWrinkle from '../assets/Products/OneProduct/CremaOjosAEnvejecimiento/AntiWrinkleEyeCream.png';
 const eyeCream = [antyWrinkle, antyWrinkle, antyWrinkle];
-
+// POLVO BRONCEADOR DUAL.
+import polvoBronceadorD_1 from '../assets/Products/OneProduct/PolvoBronceador/PressedPowder_1.png';
+import polvoBronceadorD_2 from '../assets/Products/OneProduct/PolvoBronceador/PressedPowder_2.png';
+const polvoBronceador = [polvoBronceadorD_1, polvoBronceadorD_2, polvoBronceadorD_2];
 
 const useInitialState = () => {
 
@@ -108,10 +111,19 @@ const useInitialState = () => {
                 category: "maquillaje"
 
             },
+            {
+                id: 6,
+                title: `POLVO BRONCEADOR DUAL.`,
+                price: 22_000,
+                description: `Polvo compacto bronceador con tono shimmer y mate dando un acabado perfecto a tu piel. Incluye un lado matte y un lado satinado, Alta durabilidad, Ideal para todos los tonos y tipos de piel`,
+                image: polvoBronceador,
+                category: "maquillaje"
+
+            },
 
             // SkinCare
             {
-                id: 6,
+                id: 7,
                 title: `PRIMER FACIAL SKIN PERFECT`,
                 price: 29_000,
                 description: `Gran aliado para tu maquillaje, tiene una textura de silicona, suaviza la piel, minimiza la apariencia de los poros al hacer una capa delgada en la piel.`,
@@ -120,7 +132,7 @@ const useInitialState = () => {
 
             },
             {
-                id: 7,
+                id: 8,
                 title: `SUERO VITAMINA C BIOAQUA 100 ml`,
                 price: 20_000,
                 description: `Para todo tipo de piel`,
@@ -129,9 +141,9 @@ const useInitialState = () => {
 
             },
             {
-                id: 8,
+                id: 9,
                 title: `CREMA CONTORNO DE OJOS ANTI ENVEJECIMIENTO BIOAQUA.`,
-                price: '',
+                price: 15_000,
                 description: `producto de belleza diseñado para cuidar y tratar la piel alrededor de los ojos. Esta área de la piel es conocida por ser más delicada y propensa a la aparición de arrugas, y otros signos de envejecimiento.`,
                 image: eyeCream,
                 category: "skincare"
