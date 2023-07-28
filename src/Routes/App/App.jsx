@@ -19,8 +19,8 @@ function App() {
           <Layout>
             <Routes>
               <Route exact path="/mf" element={<Home />} />
-              <Route exact path="/maquillaje" element={<Home />} />
-              <Route exact path="/labiales" element={<Home />} />
+              <Route exact path="/mf/maquillaje" element={<Home />} />
+              <Route exact path="/mf/skincare" element={<Home />} />
             </Routes>
           </Layout>
         </BrowserRouter>

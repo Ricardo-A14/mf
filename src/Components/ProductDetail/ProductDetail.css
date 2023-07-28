@@ -9,6 +9,7 @@
     right: 0;
     border: 1px solid darkgray;
     background-color: #FFFFFF;
+    /* background-color: rosybrown; */
 
 }
 
@@ -30,7 +31,7 @@
 
 .product-detail-img {
     width: 90%;
-    height: 45%;
+    height: 40%;
     margin: 0 auto;
     margin-top: 10px;
     /* background-color: cornflowerblue; */
@@ -47,7 +48,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 90%;
-    height: 50%;
+    height: 55%;
     margin: 0 auto;
     padding: 0;
     margin-bottom: 4px;
@@ -55,8 +56,24 @@
 }
 
 .aside-product-info .title {
-    width: 95%;
+    width: 100%;
     /* background-color: aquamarine; */
+}
+
+.variety {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    /* background-color: tomato; */
+}
+.variety-container {
+    bottom: 130px;
+    position: absolute;
+    width: 90%;
+    z-index: 6;
+    /* background-color: burlywood; */
 }
 
 .aside-product-info .price {
@@ -65,7 +82,8 @@
 }
 
 .aside-product-info .description {
-    width: 95%;
+    width: 100%;
+    font-size: 15px;
     /* background-color: wheat; */
 }
 
@@ -75,20 +93,51 @@
     .product-detail {
         width: 100%;
         height: 95vh;
-
+        /* background-color: rosybrown; */
     }
 
     .product-detail-img {
-        width: 90%;
+        width: 76%;
         height: 45%;
         margin: 0 auto;
         margin-top: 4px;
+        /* background-color: aqua; */
     }
 
     .aside-product-info {
         justify-content: space-between;
         height: 40%;
         margin-bottom: 6rem;
+    }
+
+    .variety-container {
+        bottom: 180px;
+        position: absolute;
+        width: 90%;
+        z-index: 6;
+    }
+
+}
+
+@media(max-height: 640px) {
+    .product-detail {
+        height: 95vh;
+        /* background-color: rosybrown; */
+    }
+
+    .product-detail-img {
+        width: 80%;
+        height: 40%;
+        margin: 0 auto;
+        margin-top: 4px;
+        /* background-color: aqua; */
+    }
+
+    .aside-product-info {
+        justify-content: space-between;
+        height: 42%;
+        margin-bottom: 6rem;
+        /* background-color: violet; */
     }
 
 }

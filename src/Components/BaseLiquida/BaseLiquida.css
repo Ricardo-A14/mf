@@ -1,0 +1,22 @@
+
+.base_liquida {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    /* background-color: rgb(77, 68, 68); */
+}
+
+.base_liquida span {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+.base_liquida span:hover {
+    border: 1px solid black;
+}

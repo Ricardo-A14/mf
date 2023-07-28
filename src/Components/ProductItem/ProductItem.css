@@ -4,7 +4,7 @@
     justify-content: space-between;
     width: 240px;
     height: 298px;
-    margin: 16px;
+    margin: 20px;
     cursor: pointer;
     box-sizing: border-box;
     /* background-color: slategray; */
@@ -46,8 +46,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 90%;
-    height: 70%;
+    width: 95%;
+    height: 84%;
     padding: 0;
     margin: 12px 0 0 6px;
     /* background-color: beige; */
@@ -67,6 +67,12 @@
     font-weight: bold;
     /* background-color: cornflowerblue; */
 }
+
+.div-info .variety-product {
+    width: 100%;
+    /* background-color: blue; */
+}
+
 
 /* .product-info .icon-cart {
     position: absolute;

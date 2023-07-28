@@ -45,12 +45,15 @@
 
 }
 
-.navbar-left h1 {
+.navbar-left .mf-title {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    margin: 6px 0 6px 6px;
+    margin: 6px 0 6px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
     /* background-color: cornflowerblue; */
 }
 
@@ -58,7 +61,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 60%;
     height: 40%;
     padding: 0;
     /* background-color: chocolate; */
@@ -70,7 +73,11 @@
 }
 
 .navbar-left ul li a {
+    color: #a2a0a0;
     text-decoration: none;
+}
+.navbar-left ul li a:hover {
+    color: black;
 }
 
 .navbar-right {
@@ -103,10 +110,13 @@
 
     .navbar-left ul {
         display: none;
-
     }
 
     .mobile-icon {
         display: flex;
+    }
+
+    .navbar-left .mf-title {
+        margin-right: 16px;
     }
 }

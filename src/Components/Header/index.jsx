@@ -1,4 +1,3 @@
-
 import "./Navbar.css";
 
 import { NavLink } from "react-router-dom";
@@ -14,7 +13,9 @@ const Header = () => {
     setSearchByTitle,
     setSearchByCategory,
     activeMobileMenu,
-    setActiveMobileMenu,
+
+    InProductDetailFromHeader,
+    InactiveProductDetailFromTitle,
   } = useContext(AppContext);
 
   return (
@@ -25,24 +26,31 @@ const Header = () => {
         <div className="navbar-left">
           <div
             className="mobile-icon"
-            onClick={() => setActiveMobileMenu(!activeMobileMenu)}
+            onClick={() => InProductDetailFromHeader()}
           >
             <div></div>
             <div></div>
             <div></div>
           </div>
-          <h1 className="mf-title">MAGIC FACE</h1>
+
+          <NavLink
+            className="mf-title"
+            to="/mf/"
+            onClick={() => InactiveProductDetailFromTitle()}
+          >
+            MAGIC FACE
+          </NavLink>
 
           <ul>
             <li>
-              <NavLink to="/mf" onClick={() => setSearchByCategory()}>
-                All
+              <NavLink to="/mf/" onClick={() => setSearchByCategory()}>
+                Todos
               </NavLink>
             </li>
 
             <li>
               <NavLink
-                to="/maquillaje"
+                to="/mf/maquillaje"
                 onClick={() => setSearchByCategory("maquillaje")}
               >
                 Maquillaje
@@ -51,7 +59,7 @@ const Header = () => {
 
             <li>
               <NavLink
-                to="/labiales"
+                to="/mf/skincare"
                 onClick={() => setSearchByCategory("skincare")}
               >
                 Skincare

@@ -1,0 +1,71 @@
+
+.polvo_medium {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    /* background-color: rgb(77, 68, 68); */
+}
+
+.polvo_medium span {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+.polvo_medium span:hover {
+    border: 1px solid black;
+}
+
+.medium_1 {
+    position: absolute;
+    top: 78px;
+    left: 2px;
+    width: 70px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(59, 58, 58);
+}
+.medium_2 {
+    position: absolute;
+    top: 78px;
+    left: 55px;
+    width: 70px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(59, 58, 58);
+}
+.medium_3 {
+    position: absolute;
+    top: 78px;
+    left: 115px;
+    width: 70px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(59, 58, 58);
+}
+.medium_4 {
+    position: absolute;
+    top: 78px;
+    left: 166px;
+    width: 70px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(59, 58, 58);
+}
+
+
+
+
