@@ -7,14 +7,14 @@ import PolvoMedium from "../PolvoMedium";
 import BaseLiquida from "../BaseLiquida";
 
 const ProductItem = ({ product }) => {
-  const { GetProductDetails, nombrePolvos, setOpenProductDetail } =
+  const { GetProductDetails, nombrePolvos, setOpenProductDetail, setImagesPo } =
     useContext(AppContext);
 
   return (
     <div
       className="item"
       onClick={() => GetProductDetails(product)}
-      onMouseOver={() => setOpenProductDetail(false)}
+      onMouseOut={() => setImagesPo(null)}
     >
       <figure className="product-img">
         <img src={product.image[0]} alt={product.title} />

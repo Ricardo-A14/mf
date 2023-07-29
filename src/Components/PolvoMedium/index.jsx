@@ -11,70 +11,77 @@ const PolvoMedium = () => {
     setNombrePolvos,
 
     setImagesPo,
-    imagesPo,
   } = useContext(AppContext);
 
-  const Meduim_1_over = () => {
+  const Medium_1_click = () => {
     setNombrePolvos("medium_1");
-    setImagesPo(varietyImages.image[0]);
+    setImagesPo(varietyImages[0]);
   };
-  const Meduim_1_out = () => {
+  const Medium_1_over = () => {
+    setNombrePolvos("medium_1");
+  };
+  const Medium_1_out = () => {
     setNombrePolvos("");
-
-    setImagesPo(null);
   };
 
-  const Meduim_2_over = () => {
+  const Medium_2_click = () => {
     setNombrePolvos("medium_2");
-    setImagesPo(varietyImages.image[1]);
+    setImagesPo(varietyImages[1]);
   };
-  const Meduim_2_out = () => {
+  const Medium_2_over = () => {
+    setNombrePolvos("medium_2");
+  };
+  const Medium_2_out = () => {
     setNombrePolvos("");
-
-    setImagesPo(null);
   };
 
-  const Meduim_3_over = () => {
+  const Medium_3_click = () => {
     setNombrePolvos("medium_3");
-    setImagesPo(varietyImages.image[2]);
+    setImagesPo(varietyImages[2]);
   };
-  const Meduim_3_out = () => {
+  const Medium_3_over = () => {
+    setNombrePolvos("medium_3");
+  };
+  const Medium_3_out = () => {
     setNombrePolvos("");
-
-    setImagesPo(null);
   };
 
-  const Meduim_4_over = () => {
+  const Medium_4_click = () => {
     setNombrePolvos("medium_4");
-    setImagesPo(varietyImages.image[3]);
+    setImagesPo(varietyImages[3]);
   };
-  const Meduim_4_out = () => {
+  const Medium_4_over = () => {
+    setNombrePolvos("medium_4");
+  };
+  const Medium_4_out = () => {
     setNombrePolvos("");
-
-    setImagesPo(null);
   };
 
   return (
     <div className="polvo_medium">
       <span
         className=""
-        onMouseOver={() => Meduim_1_over()}
-        onMouseOut={() => Meduim_1_out()}
+        onClick={() => Medium_1_click()}
+        onMouseOver={() => Medium_1_over()}
+        onMouseOut={() => Medium_1_out()}
       ></span>
       <span
         className=""
-        onMouseOver={() => Meduim_2_over()}
-        onMouseOut={() => Meduim_2_out()}
+        onClick={() => Medium_2_click()}
+        onMouseOver={() => Medium_2_over()}
+        onMouseOut={() => Medium_2_out()}
       ></span>
       <span
         className=""
-        onMouseOver={() => Meduim_3_over()}
-        onMouseOut={() => Meduim_3_out()}
+        onClick={() => Medium_3_click()}
+        onMouseOver={() => Medium_3_over()}
+        onMouseOut={() => Medium_3_out()}
       ></span>
       <span
         className=""
-        onMouseOver={() => Meduim_4_over()}
-        onMouseOut={() => Meduim_4_out()}
+        onClick={() => Medium_4_click()}
+        onMouseOver={() => Medium_4_over()}
+        onMouseOut={() => Medium_4_out()}
       ></span>
     </div>
   );

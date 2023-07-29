@@ -87,6 +87,9 @@ const useInitialState = () => {
 
     const [imagesPo, setImagesPo] = useState(null);
 
+    // Prueba.
+    const [newImages, setNewImages] = useState(polvosCompactos);
+
 
     // GET PRODUCTS
     useEffect(() => {
@@ -370,7 +373,9 @@ const useInitialState = () => {
         setNombrePolvos,
 
         imagesPo,
-        setImagesPo
+        setImagesPo,
+
+        newImages, setNewImages
 
     }
 }

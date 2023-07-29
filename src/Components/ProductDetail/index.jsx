@@ -20,6 +20,7 @@ const ProductDetail = () => {
     setVarietyImages,
     nombrePolvos,
     imagesPo,
+    newImages,
   } = useContext(AppContext);
 
   /*-------  UNSTABLE  -------------------- */
@@ -71,7 +72,7 @@ const ProductDetail = () => {
           </div>
           <div className="variety-container">
             {productDetails.useVariety && <UseVariety />}
-            {setVarietyImages(productDetails)}
+            {setVarietyImages(newImages)}
           </div>
         </div>
 
