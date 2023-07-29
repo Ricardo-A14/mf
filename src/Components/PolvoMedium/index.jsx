@@ -22,6 +22,7 @@ const PolvoMedium = () => {
   };
   const Medium_1_out = () => {
     setNombrePolvos("");
+    setImagesPo(null);
   };
 
   const Medium_2_click = () => {
@@ -33,6 +34,7 @@ const PolvoMedium = () => {
   };
   const Medium_2_out = () => {
     setNombrePolvos("");
+    setImagesPo(null);
   };
 
   const Medium_3_click = () => {
@@ -44,6 +46,7 @@ const PolvoMedium = () => {
   };
   const Medium_3_out = () => {
     setNombrePolvos("");
+    setImagesPo(null);
   };
 
   const Medium_4_click = () => {
@@ -55,6 +58,7 @@ const PolvoMedium = () => {
   };
   const Medium_4_out = () => {
     setNombrePolvos("");
+    setImagesPo(null);
   };
 
   return (

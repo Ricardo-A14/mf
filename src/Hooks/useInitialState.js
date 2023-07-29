@@ -265,6 +265,7 @@ const useInitialState = () => {
     const InProductDetailFromHeader = () => {
         setOpenProductDetail(false);
         setActiveMobileMenu(!activeMobileMenu);
+        setImagesPo(null);
     }
 
     const InactiveProductDetailFromTitle = () => {

@@ -39,7 +39,7 @@ const ProductDetail = () => {
       </div>
 
       <figure className="product-detail-img">
-        {productDetails.image !== null && imagesPo === null ? (
+        {productDetails.image !== null && imagesPo == null ? (
           <img src={productDetails.image[0]} alt={productDetails.title} />
         ) : (
           <img src={imagesPo} alt={productDetails.title} />
