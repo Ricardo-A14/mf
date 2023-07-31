@@ -141,3 +141,10 @@
     }
 
 }
+
+@media (max-width: 408px){
+    .variety-container {
+        bottom: 200px;
+    }
+}
+

@@ -1,7 +1,7 @@
 
 .bage_3_detail {
     position: absolute;
-    left: 8px;
+    left: 60px;
     width: 70px;
     font-size: 14px;
     text-align: center;
@@ -10,11 +10,16 @@
     background-color: rgb(59, 58, 58);
 }
 
+@media(max-width: 470px){
+
+    .bage_3_detail {
+        left: 24%;
+    }
+}
 @media(max-width: 640px){
 
     .bage_3_detail {
-        left: 6%;
+        left: 25%;
     }
 }
-
 

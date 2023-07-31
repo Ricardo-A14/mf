@@ -1,7 +1,7 @@
 
 .bage_5_detail {
     position: absolute;
-    left: 8px;
+    right: 58px;
     width: 70px;
     font-size: 14px;
     text-align: center;
@@ -13,8 +13,24 @@
 @media(max-width: 640px){
 
     .bage_5_detail {
-        left: 6%;
+        right: 25%;
     }
 }
+@media(max-width: 513px){
 
+    .bage_5_detail {
+        right: 24%;
+    }
+}
+@media(max-width: 450px){
 
+    .bage_5_detail {
+        right: 23%;
+    }
+}
+@media(max-width: 400px){
+
+    .bage_5_detail {
+        right: 22%;
+    }
+}
