@@ -23,7 +23,7 @@
 
 .bage_2 {
     position: absolute;
-    top: 78px;
+    top: 75px;
     left: 2px;
     width: 70px;
     font-size: 14px;
@@ -34,8 +34,8 @@
 }
 .bage_3 {
     position: absolute;
-    top: 78px;
-    left: 2px;
+    top: 75px;
+    left: 40px;
     width: 70px;
     font-size: 14px;
     text-align: center;
@@ -45,8 +45,8 @@
 }
 .bage_4 {
     position: absolute;
-    top: 78px;
-    left: 2px;
+    top: 75px;
+    left: 86px;
     width: 70px;
     font-size: 14px;
     text-align: center;
@@ -56,8 +56,8 @@
 }
 .bage_5 {
     position: absolute;
-    top: 78px;
-    left: 2px;
+    top: 75px;
+    right: 38px;
     width: 70px;
     font-size: 14px;
     text-align: center;
@@ -67,8 +67,8 @@
 }
 .bage_7 {
     position: absolute;
-    top: 78px;
-    left: 2px;
+    top: 75px;
+    right: 2px;
     width: 70px;
     font-size: 14px;
     text-align: center;
