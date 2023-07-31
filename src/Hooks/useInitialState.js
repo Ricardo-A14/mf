@@ -54,8 +54,13 @@ import polvoCom_2 from '../assets/Products/OneProduct/PolvoCompacto/PolvoCom_2.p
 import polvoCom_4 from '../assets/Products/OneProduct/PolvoCompacto/PolvoCom_4.png';
 import polvoCom_5 from '../assets/Products/OneProduct/PolvoCompacto/PolvoCom_5.png';
 const polvosCompactos = [polvoCom_1, polvoCom_2, polvoCom_4, polvoCom_5];
-
-
+// BÁSE LIQUIDA BAGE.
+import bage_2 from '../assets/Products/OneProduct/BaseLiquida/Bage_2.png';
+import bage_3 from '../assets/Products/OneProduct/BaseLiquida/Bage_3.png';
+import bage_4 from '../assets/Products/OneProduct/BaseLiquida/Bage_4.png';
+import bage_5 from '../assets/Products/OneProduct/BaseLiquida/Bage_5.png';
+import bage_7 from '../assets/Products/OneProduct/BaseLiquida/Bage_7.png';
+const basesBage = [bage_2, bage_3, bage_4, bage_5, bage_7];
 
 const useInitialState = () => {
 
@@ -80,15 +85,22 @@ const useInitialState = () => {
     const [useVariety, setUseVariety] = useState({});
 
     // Get product image.
-    const [varietyImages, setVarietyImages] = useState("");
 
     // Activar nombre polvos.
     const [nombrePolvos, setNombrePolvos] = useState("");
+    const [nombreBases, setNombreBases] = useState("");
+
+
+    // TEST.
+    const [varietyImages, setVarietyImages] = useState("");
+    const [varietyImages2, setVarietyImages2] = useState("");
 
     const [imagesPo, setImagesPo] = useState(null);
+    const [imagesBase, setImagesBase] = useState(null);
 
-    // Prueba.
     const [newImages, setNewImages] = useState(polvosCompactos);
+    const [newImages2, setNewImages2] = useState(basesBage);
+
 
 
     // GET PRODUCTS
@@ -240,7 +252,7 @@ const useInitialState = () => {
                 title: `BÁSE LIQUIDA.`,
                 price: 29_000,
                 description: `producto de belleza diseñado para cuidar y tratar la piel alrededor de los ojos. Esta área de la piel es conocida por ser más delicada y propensa a la aparición de arrugas, y otros signos de envejecimiento.`,
-                image: exfolianteArroz,
+                image: basesBage,
                 category: "maquillaje",
                 useVariety: true,
                 varietyNumber: 2
@@ -367,16 +379,21 @@ const useInitialState = () => {
         InProductDetailFromHeader,
         InactiveProductDetailFromTitle,
 
-        varietyImages,
-        setVarietyImages,
 
-        nombrePolvos,
-        setNombrePolvos,
 
-        imagesPo,
-        setImagesPo,
 
-        newImages, setNewImages
+        // TEST.
+        varietyImages, setVarietyImages,
+        varietyImages2, setVarietyImages2,
+
+        nombrePolvos, setNombrePolvos,
+        nombreBases, setNombreBases,
+
+        imagesPo, setImagesPo,
+        imagesBase, setImagesBase,
+
+        newImages, setNewImages,
+        newImages2, setNewImages2
 
     }
 }

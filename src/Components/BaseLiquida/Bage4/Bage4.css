@@ -1,0 +1,20 @@
+
+.bage_4_detail {
+    position: absolute;
+    left: 8px;
+    width: 70px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(59, 58, 58);
+}
+
+@media(max-width: 640px){
+
+    .bage_4_detail {
+        left: 6%;
+    }
+}
+
+

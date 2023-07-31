@@ -7,14 +7,24 @@ import PolvoMedium from "../PolvoMedium";
 import BaseLiquida from "../BaseLiquida";
 
 const ProductItem = ({ product }) => {
-  const { GetProductDetails, nombrePolvos, setOpenProductDetail, setImagesPo } =
-    useContext(AppContext);
+  const {
+    GetProductDetails,
+    nombrePolvos,
+    nombreBases,
+    setImagesPo,
+    setImagesBase,
+  } = useContext(AppContext);
+
+  const HandleOnMouseOver = () => {
+    setImagesPo(null);
+    setImagesBase(null);
+  };
 
   return (
     <div
       className="item"
       onClick={() => GetProductDetails(product)}
-      onMouseOut={() => setImagesPo(null)}
+      onMouseOut={() => HandleOnMouseOver()}
     >
       <figure className="product-img">
         <img src={product.image[0]} alt={product.title} />
@@ -27,6 +37,7 @@ const ProductItem = ({ product }) => {
           <div className="variety-product">
             {product.varietyNumber === 1 && <PolvoMedium />}
             {product.varietyNumber === 2 && <BaseLiquida />}
+
             {nombrePolvos === "medium_1" && product.varietyNumber === 1 ? (
               <div className="medium_1">MEDIUM 1</div>
             ) : null}
@@ -38,6 +49,22 @@ const ProductItem = ({ product }) => {
             ) : null}
             {nombrePolvos === "medium_4" && product.varietyNumber === 1 ? (
               <div className="medium_4">MEDIUM 5</div>
+            ) : null}
+
+            {nombreBases === "bage_2" && product.varietyNumber === 2 ? (
+              <div className="bage_2">BAGE 2</div>
+            ) : null}
+            {nombreBases === "bage_3" && product.varietyNumber === 2 ? (
+              <div className="bage_3">BAGE 3</div>
+            ) : null}
+            {nombreBases === "bage_4" && product.varietyNumber === 2 ? (
+              <div className="bage_4">BAGE 4</div>
+            ) : null}
+            {nombreBases === "bage_5" && product.varietyNumber === 2 ? (
+              <div className="bage_5">BAGE 5</div>
+            ) : null}
+            {nombreBases === "bage_7" && product.varietyNumber === 2 ? (
+              <div className="bage_7">BAGE 7</div>
             ) : null}
           </div>
         </div>
