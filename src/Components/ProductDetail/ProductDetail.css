@@ -110,12 +110,7 @@
         margin-bottom: 6rem;
     }
 
-    .variety-container {
-        bottom: 180px;
-        position: absolute;
-        width: 90%;
-        z-index: 6;
-    }
+    
 
 }
 
@@ -139,7 +134,19 @@
         margin-bottom: 6rem;
         /* background-color: violet; */
     }
+    .variety-container {
+        bottom: 36%;
+        z-index: 6;
+        /* background-color: yellow; */
+    }
 
+}
+@media (max-height:770px ) {
+    .variety {
+        align-items: normal;
+        height: 35px;
+        /* background-color: aqua; */
+    }
 }
 
 @media (max-width: 408px){
