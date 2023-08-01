@@ -34,3 +34,9 @@
         right: 22%;
     }
 }
+@media(max-width: 320px){
+
+    .bage_5_detail {
+        right: 20%;
+    }
+}

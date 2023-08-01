@@ -16,6 +16,11 @@
         left: 6%;
     }
 }
+@media(max-width: 320px){
 
+    .bage_2_detail {
+        left: 3%;
+    }
+}
 
 

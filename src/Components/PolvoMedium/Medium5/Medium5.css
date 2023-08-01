@@ -13,9 +13,22 @@
 @media(max-width: 640px){
 
     .medium_5_detail {
-        right: 4%;
+        right: 6%;
         
     }
 }
+@media(max-width: 506px){
 
+    .medium_5_detail {
+        right: 5%;
+        
+    }
+}
+@media(max-width: 380px){
+
+    .medium_5_detail {
+        right: 3%;
+        
+    }
+}
 

@@ -13,7 +13,7 @@
 @media(max-width: 640px){
 
     .bage_7_detail {
-        right: 6%;
+        right: 5%;
     }
 }
 @media(max-width: 450px){
@@ -26,5 +26,11 @@
 
     .bage_7_detail {
         right: 4%;
+    }
+}
+@media(max-width: 320px){
+
+    .bage_7_detail {
+        right: 2%;
     }
 }

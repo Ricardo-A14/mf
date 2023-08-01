@@ -10,16 +10,28 @@
     background-color: rgb(59, 58, 58);
 }
 
-@media(max-width: 470px){
 
-    .bage_3_detail {
-        left: 24%;
-    }
-}
 @media(max-width: 640px){
 
     .bage_3_detail {
         left: 25%;
     }
 }
+@media(max-width: 470px){
 
+    .bage_3_detail {
+        left: 24%;
+    }
+}
+@media(max-width: 460px){
+
+    .bage_3_detail {
+        left: 23.4%;
+    }
+}
+@media(max-width: 420px){
+
+    .bage_3_detail {
+        left: 22%;
+    }
+}

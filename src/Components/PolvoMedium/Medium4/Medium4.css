@@ -14,8 +14,28 @@
 @media(max-width: 640px){
 
     .medium_4_detail {
+        right: 31%;
+        
+    }
+}
+@media(max-width: 513px){
+
+    .medium_4_detail {
         right: 30%;
         
     }
 }
+@media(max-width: 408px){
 
+    .medium_4_detail {
+        right: 28%;
+        
+    }
+}
+@media(max-width: 330px){
+
+    .medium_4_detail {
+        right: 26%;
+        
+    }
+}
