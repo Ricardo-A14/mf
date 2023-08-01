@@ -110,7 +110,10 @@
         margin-bottom: 6rem;
     }
 
-    
+    .variety-container {
+        bottom: 22%;
+        background-color: burlywood;
+    }
 
 }
 
