@@ -15,8 +15,22 @@
     height: 16px;
     margin: 0 4px;
     border-radius: 50%;
-    background-color: cadetblue;
 }
+.polvo_medium .m1 {
+    background-color: rgb(232, 198, 156);
+}
+.polvo_medium .m2 {
+    background-color: rgb(214, 182, 143);
+}
+.polvo_medium .m4 {
+    background-color: rgb(184, 151, 112);
+}
+.polvo_medium .m5 {
+    background-color: rgb(160, 131, 96);
+    
+
+}
+
 .polvo_medium span:hover {
     border: 1px solid black;
 }
@@ -30,7 +44,7 @@
     text-align: center;
     border-radius: 5px;
     color: white;
-    background-color: rgb(59, 58, 58);
+    background-color: rgb;
 }
 .medium_2 {
     position: absolute;

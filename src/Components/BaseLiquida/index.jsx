@@ -76,31 +76,31 @@ const BaseLiquida = () => {
   return (
     <div className="base_liquida">
       <span
-        className=""
+        className="b2"
         onClick={() => Bage_2_click()}
         onMouseOver={() => Bage_2_over()}
         onMouseOut={() => Bage_2_out()}
       ></span>
       <span
-        className=""
+        className="b3"
         onClick={() => Bage_3_click()}
         onMouseOver={() => Bage_3_over()}
         onMouseOut={() => Bage_3_out()}
       ></span>
       <span
-        className=""
+        className="b4"
         onClick={() => Bage_4_click()}
         onMouseOver={() => Bage_4_over()}
         onMouseOut={() => Bage_4_out()}
       ></span>
       <span
-        className=""
+        className="b5"
         onClick={() => Bage_5_click()}
         onMouseOver={() => Bage_5_over()}
         onMouseOut={() => Bage_5_out()}
       ></span>
       <span
-        className=""
+        className="b7"
         onClick={() => Bage_7_click()}
         onMouseOver={() => Bage_7_over()}
         onMouseOut={() => Bage_7_out()}

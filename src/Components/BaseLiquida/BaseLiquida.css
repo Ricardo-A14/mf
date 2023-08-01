@@ -15,8 +15,23 @@
     height: 16px;
     margin: 0 4px;
     border-radius: 50%;
-    background-color: blueviolet;
 }
+.base_liquida .b2 {
+    background-color: rgb(235, 219, 195);
+}
+.base_liquida .b3 {
+    background-color: rgb(237, 214, 179);
+}
+.base_liquida .b4 {
+    background-color: rgb(220, 193, 151);
+}
+.base_liquida .b5 {
+    background-color: rgb(204, 165, 101);
+}
+.base_liquida .b7 {
+    background-color: rgb(207, 159, 80);
+}
+
 .base_liquida span:hover {
     border: 1px solid black;
 }
