@@ -5,13 +5,8 @@ import { useContext } from "react";
 import "./PolvoMedium.css";
 
 const PolvoMedium = () => {
-  const {
-    varietyImages,
-
-    setNombrePolvos,
-
-    setImagesPo,
-  } = useContext(AppContext);
+  const { varietyImages, setNombrePolvos, setImagesPo } =
+    useContext(AppContext);
 
   const Medium_1_click = () => {
     setNombrePolvos("medium_1");

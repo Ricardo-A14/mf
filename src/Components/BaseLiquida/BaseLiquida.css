@@ -17,19 +17,19 @@
     border-radius: 50%;
 }
 .base_liquida .b2 {
-    background-color: rgb(235, 219, 195);
+    background-image: url(./BageImg/bage2.png);
 }
 .base_liquida .b3 {
-    background-color: rgb(237, 214, 179);
+    background-image: url(./BageImg/bage3.png);
 }
 .base_liquida .b4 {
-    background-color: rgb(220, 193, 151);
+    background-image: url(./BageImg/bage4.png);
 }
 .base_liquida .b5 {
-    background-color: rgb(204, 165, 101);
+    background-image: url(./BageImg/bage5.png);
 }
 .base_liquida .b7 {
-    background-color: rgb(207, 159, 80);
+    background-image: url(./BageImg/bage7.png);
 }
 
 .base_liquida span:hover {

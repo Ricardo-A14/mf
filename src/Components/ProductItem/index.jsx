@@ -5,19 +5,25 @@ import AppContext from "../../Context";
 
 import PolvoMedium from "../PolvoMedium";
 import BaseLiquida from "../BaseLiquida";
+import GelTint from "../GelTint";
 
 const ProductItem = ({ product }) => {
   const {
     GetProductDetails,
+
     nombrePolvos,
     nombreBases,
+    gelTintName,
+
     setImagesPo,
     setImagesBase,
+    setGelTintImg,
   } = useContext(AppContext);
 
   const HandleOnMouseOver = () => {
     setImagesPo(null);
     setImagesBase(null);
+    setGelTintImg(null);
   };
 
   return (
@@ -37,6 +43,7 @@ const ProductItem = ({ product }) => {
           <div className="variety-product">
             {product.varietyNumber === 1 && <PolvoMedium />}
             {product.varietyNumber === 2 && <BaseLiquida />}
+            {product.varietyNumber === 3 && <GelTint />}
 
             {nombrePolvos === "medium_1" && product.varietyNumber === 1 ? (
               <div className="medium_1">MEDIUM 1</div>
@@ -65,6 +72,16 @@ const ProductItem = ({ product }) => {
             ) : null}
             {nombreBases === "bage_7" && product.varietyNumber === 2 ? (
               <div className="bage_7">BAGE 7</div>
+            ) : null}
+
+            {gelTintName === "tint_red" && product.varietyNumber === 3 ? (
+              <div className="tint_red">RED</div>
+            ) : null}
+            {gelTintName === "tint_juice" && product.varietyNumber === 3 ? (
+              <div className="tint_juice">JUICE</div>
+            ) : null}
+            {gelTintName === "tint_pool" && product.varietyNumber === 3 ? (
+              <div className="tint_pool">POOL</div>
             ) : null}
           </div>
         </div>

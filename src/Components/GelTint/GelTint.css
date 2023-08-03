@@ -1,5 +1,4 @@
-
-.polvo_medium {
+.gel_tint {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,37 +8,17 @@
     /* background-color: rgb(77, 68, 68); */
 }
 
-.polvo_medium span {
+.gel_tint span {
     box-sizing: border-box;
     width: 16px;
     height: 16px;
     margin: 0 4px;
     border-radius: 50%;
+    background-color: blueviolet;
 }
-.polvo_medium .m1 {
-    background-image: url(./MediumImg/med1.png);
-
-}
-.polvo_medium .m2 {
-    background-image: url(./MediumImg/med2.png);
-
-}
-.polvo_medium .m4 {
-    background-image: url(./MediumImg/med4.png);
-
-}
-.polvo_medium .m5 {
-    background-image: url(./MediumImg/med5.png);
-
-}
-
-.polvo_medium span:hover {
-    border: 1px solid black;
-}
-
-.medium_1 {
+.tint_red {
     position: absolute;
-    top: 78px;
+    top: 75px;
     left: 2px;
     width: 70px;
     font-size: 14px;
@@ -48,10 +27,10 @@
     color: white;
     background-color: rgb(59, 58, 58);
 }
-.medium_2 {
+.tint_juice {
     position: absolute;
-    top: 78px;
-    left: 55px;
+    top: 75px;
+    left: 85px;
     width: 70px;
     font-size: 14px;
     text-align: center;
@@ -59,10 +38,10 @@
     color: white;
     background-color: rgb(59, 58, 58);
 }
-.medium_3 {
+.tint_pool {
     position: absolute;
-    top: 78px;
-    left: 115px;
+    top: 75px;
+    right: 2px;
     width: 70px;
     font-size: 14px;
     text-align: center;
@@ -70,18 +49,3 @@
     color: white;
     background-color: rgb(59, 58, 58);
 }
-.medium_4 {
-    position: absolute;
-    top: 78px;
-    left: 166px;
-    width: 70px;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    background-color: rgb(59, 58, 58);
-}
-
-
-
-

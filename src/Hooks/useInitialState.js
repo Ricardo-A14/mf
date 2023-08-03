@@ -61,6 +61,12 @@ import bage_4 from '../assets/Products/OneProduct/BaseLiquida/Bage_4.png';
 import bage_5 from '../assets/Products/OneProduct/BaseLiquida/Bage_5.png';
 import bage_7 from '../assets/Products/OneProduct/BaseLiquida/Bage_7.png';
 const basesBage = [bage_2, bage_3, bage_4, bage_5, bage_7];
+// GEL TINT.
+import tintRed from '../assets/Products/OneProduct/GelTint/gelRed.png';
+import tintJuice from '../assets/Products/OneProduct/GelTint/gelJuice.png';
+import tintPool from '../assets/Products/OneProduct/GelTint/gelPool.png';
+const tintGel = [tintRed, tintJuice, tintPool];
+
 
 const useInitialState = () => {
 
@@ -84,22 +90,24 @@ const useInitialState = () => {
     // Get item use variety.
     const [useVariety, setUseVariety] = useState({});
 
-    // Get product image.
 
-    // Activar nombre polvos.
+    // Activar nombre productos.
     const [nombrePolvos, setNombrePolvos] = useState("");
     const [nombreBases, setNombreBases] = useState("");
-
+    const [gelTintName, setGelTintName] = useState("");
 
     // TEST.
     const [varietyImages, setVarietyImages] = useState("");
     const [varietyImages2, setVarietyImages2] = useState("");
+    const [varietyImages3, setVarietyImages3] = useState("");
 
     const [imagesPo, setImagesPo] = useState(null);
     const [imagesBase, setImagesBase] = useState(null);
+    const [gelTintImg, setGelTintImg] = useState(null);
 
     const [newImages, setNewImages] = useState(polvosCompactos);
     const [newImages2, setNewImages2] = useState(basesBage);
+    const [newImages3, setNewImages3] = useState(tintGel);
 
 
 
@@ -241,7 +249,7 @@ const useInitialState = () => {
                 id: 13,
                 title: `POLVOS COMPACTOS.`,
                 price: 25_000,
-                description: `producto de belleza diseñado para cuidar y tratar la piel alrededor de los ojos. Esta área de la piel es conocida por ser más delicada y propensa a la aparición de arrugas, y otros signos de envejecimiento.`,
+                description: `Proporciona un efecto natural en la piel, controla el exceso de brillo y disimula las manchas e imperfecciones de la piel.`,
                 image: polvosCompactos,
                 category: "maquillaje",
                 useVariety: true,
@@ -251,11 +259,22 @@ const useInitialState = () => {
                 id: 14,
                 title: `BÁSE LIQUIDA.`,
                 price: 29_000,
-                description: `producto de belleza diseñado para cuidar y tratar la piel alrededor de los ojos. Esta área de la piel es conocida por ser más delicada y propensa a la aparición de arrugas, y otros signos de envejecimiento.`,
+                description: `Cuando se trata de maquillaje, siempre queremos una piel perfecta y natural. Pensando en ti, Ruby Rose crea la base Soft Matte.
+                Una base desarrollada para contener la grasa de la piel y ocultar las imperfecciones, además de proporcionar un excelente acabado, alta cobertura y larga duración.`,
                 image: basesBage,
                 category: "maquillaje",
                 useVariety: true,
                 varietyNumber: 2
+            },
+            {
+                id: 15,
+                title: `GEL TINTA.`,
+                price: 20_000,
+                description: `Tint description.`,
+                image: tintGel,
+                category: "maquillaje",
+                useVariety: true,
+                varietyNumber: 3
             },
 
 
@@ -264,8 +283,6 @@ const useInitialState = () => {
         ];
         setItems(productList);
     }, []);
-
-
 
 
 
@@ -380,20 +397,22 @@ const useInitialState = () => {
         InactiveProductDetailFromTitle,
 
 
-
-
         // TEST.
         varietyImages, setVarietyImages,
         varietyImages2, setVarietyImages2,
+        varietyImages3, setVarietyImages3,
 
         nombrePolvos, setNombrePolvos,
         nombreBases, setNombreBases,
+        gelTintName, setGelTintName,
 
         imagesPo, setImagesPo,
         imagesBase, setImagesBase,
+        gelTintImg, setGelTintImg,
 
         newImages, setNewImages,
-        newImages2, setNewImages2
+        newImages2, setNewImages2,
+        newImages3, setNewImages3,
 
     }
 }

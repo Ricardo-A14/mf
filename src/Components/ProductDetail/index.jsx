@@ -18,23 +18,31 @@ import Bage4 from "../BaseLiquida/Bage4";
 import Bage5 from "../BaseLiquida/Bage5";
 import Bage7 from "../BaseLiquida/Bage7";
 
+import TintJuice from "../GelTint/TintJuice";
+import TintRed from "../GelTint/TintRed";
+import TintPool from "../GelTint/TintPool";
+
 const ProductDetail = () => {
   const {
     setOpenProductDetail,
     productDetails,
     HandleUseVariety,
+
     setVarietyImages,
-    varietyImages,
     setVarietyImages2,
-    varietyImages2,
+    setVarietyImages3,
+
     nombrePolvos,
     nombreBases,
+    gelTintName,
+
     imagesPo,
     imagesBase,
-    setNewImages,
-    setNewImages2,
+    gelTintImg,
+
     newImages,
     newImages2,
+    newImages3,
   } = useContext(AppContext);
 
   /*-------  UNSTABLE  -------------------- */
@@ -43,12 +51,19 @@ const ProductDetail = () => {
   /*-------  UNSTABLE  -------------------- */
 
   const HandleVarietyImages = () => {
-    if (productDetails.image && imagesPo == null && imagesBase == null) {
+    if (
+      productDetails.image &&
+      imagesPo == null &&
+      imagesBase == null &&
+      gelTintImg == null
+    ) {
       return <img src={productDetails.image[0]} alt={productDetails.title} />;
-    } else if (imagesPo && imagesBase === null) {
+    } else if (imagesPo && imagesBase === null && gelTintImg === null) {
       return <img src={imagesPo} alt={productDetails.title} />;
-    } else if (imagesBase && imagesPo === null) {
+    } else if (imagesBase && imagesPo === null && gelTintImg === null) {
       return <img src={imagesBase} alt={productDetails.title} />;
+    } else if ((gelTintImg && imagesPo === null, imagesBase === null)) {
+      return <img src={gelTintImg} alt={productDetails.title} />;
     }
   };
 
@@ -102,12 +117,27 @@ const ProductDetail = () => {
             {nombreBases === "bage_7" && productDetails.varietyNumber === 2 ? (
               <Bage7 />
             ) : null}
+
+            {gelTintName === "tint_red" &&
+            productDetails.varietyNumber === 3 ? (
+              <TintRed />
+            ) : null}
+            {gelTintName === "tint_juice" &&
+            productDetails.varietyNumber === 3 ? (
+              <TintJuice />
+            ) : null}
+            {gelTintName === "tint_pool" &&
+            productDetails.varietyNumber === 3 ? (
+              <TintPool />
+            ) : null}
           </div>
           <div className="variety-container">
             {productDetails.useVariety && <UseVariety />}
             {productDetails.varietyNumber === 1 && setVarietyImages(newImages)}
             {productDetails.varietyNumber === 2 &&
               setVarietyImages2(newImages2)}
+            {productDetails.varietyNumber === 3 &&
+              setVarietyImages3(newImages3)}
           </div>
         </div>
 
