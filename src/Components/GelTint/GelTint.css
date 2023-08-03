@@ -14,8 +14,17 @@
     height: 16px;
     margin: 0 4px;
     border-radius: 50%;
-    background-color: blueviolet;
 }
+.tint-red {
+    background-image: url(./GelImg/ge1.png);
+}
+.tint-juice {
+    background-image: url(./GelImg/gel2.png);
+}
+.tint-pool {
+    background-image: url(./GelImg/gel3.png);
+}
+
 .tint_red {
     position: absolute;
     top: 75px;

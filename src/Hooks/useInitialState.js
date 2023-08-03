@@ -270,7 +270,8 @@ const useInitialState = () => {
                 id: 15,
                 title: `GEL TINTA.`,
                 price: 20_000,
-                description: `Tint description.`,
+                description: `Gel Tint es perfecto para realzar el color natural de tus labios con una excelente pigmentación de larga duración que deja los labios enrojecidos durante todo el día.
+                Además tus labios estarán hidratados y saludables durante todo el día, pues el GEL TINT está enriquecido con ÁCIDO HIALURÓNICO Y D-PANTENOL, además, huele delicioso!!.`,
                 image: tintGel,
                 category: "maquillaje",
                 useVariety: true,
