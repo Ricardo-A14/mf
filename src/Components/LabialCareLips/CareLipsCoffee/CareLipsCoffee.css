@@ -1,7 +1,7 @@
 
-.tint_juice_detail {
+.coffee_detail {
     position: absolute;
-    left: 39%;
+    right: 8px;
     width: 70px;
     font-size: 14px;
     text-align: center;
@@ -12,13 +12,13 @@
 
 @media(max-width: 640px){
 
-    .tint_juice_detail {
-        left: 44%;
+    .coffee_detail {
+        right: 6%;
     }
 }
 @media(max-width: 320px){
 
-    .tint_juice_detail {
-        left: 39%;
+    .coffee_detail {
+        right: 8px;
     }
 }

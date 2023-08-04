@@ -15,6 +15,10 @@
     margin: 0 4px;
     border-radius: 50%;
 }
+.gel_tint span:hover {
+    border: 2px solid black;
+}
+
 .tint-red {
     background-image: url(./GelImg/ge1.png);
 }

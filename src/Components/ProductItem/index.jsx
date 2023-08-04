@@ -6,6 +6,7 @@ import AppContext from "../../Context";
 import PolvoMedium from "../PolvoMedium";
 import BaseLiquida from "../BaseLiquida";
 import GelTint from "../GelTint";
+import LabialCareLips from "../LabialCareLips";
 
 const ProductItem = ({ product }) => {
   const {
@@ -14,16 +15,19 @@ const ProductItem = ({ product }) => {
     nombrePolvos,
     nombreBases,
     gelTintName,
+    careLipsName,
 
     setImagesPo,
     setImagesBase,
     setGelTintImg,
+    setCareLipsImg,
   } = useContext(AppContext);
 
   const HandleOnMouseOver = () => {
     setImagesPo(null);
     setImagesBase(null);
     setGelTintImg(null);
+    setCareLipsImg(null);
   };
 
   return (
@@ -44,6 +48,7 @@ const ProductItem = ({ product }) => {
             {product.varietyNumber === 1 && <PolvoMedium />}
             {product.varietyNumber === 2 && <BaseLiquida />}
             {product.varietyNumber === 3 && <GelTint />}
+            {product.varietyNumber === 4 && <LabialCareLips />}
 
             {nombrePolvos === "medium_1" && product.varietyNumber === 1 ? (
               <div className="medium_1">MEDIUM 1</div>
@@ -82,6 +87,17 @@ const ProductItem = ({ product }) => {
             ) : null}
             {gelTintName === "tint_pool" && product.varietyNumber === 3 ? (
               <div className="tint_pool">POOL</div>
+            ) : null}
+
+            {careLipsName === "strawberry_love" &&
+            product.varietyNumber === 4 ? (
+              <div className="strawberry_love">LOVE</div>
+            ) : null}
+            {careLipsName === "mint_fever" && product.varietyNumber === 4 ? (
+              <div className="mint_fever">FEVER</div>
+            ) : null}
+            {careLipsName === "coffee_break" && product.varietyNumber === 4 ? (
+              <div className="coffee_break">COFFEE </div>
             ) : null}
           </div>
         </div>

@@ -13,12 +13,12 @@
 @media(max-width: 640px){
 
     .tint_pool_detail {
-        left: 6%;
+        right: 6%;
     }
 }
 @media(max-width: 320px){
 
     .tint_pool_detail {
-        left: 3%;
+        right: 8px;
     }
 }

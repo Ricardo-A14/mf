@@ -1,5 +1,5 @@
 
-.tint_juice_detail {
+.fever_detail {
     position: absolute;
     left: 39%;
     width: 70px;
@@ -12,13 +12,13 @@
 
 @media(max-width: 640px){
 
-    .tint_juice_detail {
+    .fever_detail {
         left: 44%;
     }
 }
 @media(max-width: 320px){
 
-    .tint_juice_detail {
+    .fever_detail {
         left: 39%;
     }
 }
