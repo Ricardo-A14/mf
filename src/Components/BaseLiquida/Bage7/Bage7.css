@@ -1,4 +1,3 @@
-
 .bage_7_detail {
     position: absolute;
     right: 6px;
@@ -10,19 +9,21 @@
     background-color: rgb(59, 58, 58);
 }
 
-@media(max-width: 640px){
+@media(max-width: 640px) {
 
     .bage_7_detail {
         right: 6%;
     }
 }
-@media(max-width: 450px){
+
+@media(max-width: 450px) {
 
     .bage_7_detail {
-        right: 5%;
+        right: 4%;
     }
 }
-@media(max-width: 400px){
+
+@media(max-width: 400px) {
 
     .bage_7_detail {
         right: 4%;
