@@ -3,8 +3,8 @@ import AppContext from "../../Context/index";
 
 import PolvoMedium from "../PolvoMedium";
 import BaseLiquida from "../BaseLiquida";
-import GelTint from "../GelTint";
 import LabialCareLips from "../LabialCareLips";
+import GelTint from "../GelTint";
 
 const useVariety = () => {
   const { useVariety } = useContext(AppContext);

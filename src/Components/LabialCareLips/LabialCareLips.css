@@ -15,7 +15,7 @@
     height: 16px;
     margin: 0 4px;
     border-radius: 50%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 .care_lips span:hover {
     border: 2px solid black;
@@ -32,7 +32,7 @@
     background-image: url(./CareLipsImg/cl3.png);
 }
 
-.strawberry_love {
+.strawberry_l {
     position: absolute;
     top: 75px;
     left: 2px;
@@ -43,7 +43,7 @@
     color: white;
     background-color: rgb(59, 58, 58);
 }
-.mint_fever {
+.mint_f {
     position: absolute;
     top: 75px;
     left: 85px;
@@ -54,7 +54,7 @@
     color: white;
     background-color: rgb(59, 58, 58);
 }
-.coffee_break {
+.coffee_b {
     position: absolute;
     top: 75px;
     right: 2px;

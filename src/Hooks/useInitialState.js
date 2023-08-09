@@ -6,48 +6,48 @@ import { useState, useEffect } from "react";
 // FEELS SOFT NUDE PALETTE.
 import p_feelsSoftNude_1 from '../assets/Products/ProductsWithCategories/PaletaFeelsSoftNude/feelsSoftNude_1.png';
 import p_feelsSoftNude_2 from '../assets/Products/ProductsWithCategories/PaletaFeelsSoftNude/feelsSoftNude_2.png';
-const feelsSoftNude = [p_feelsSoftNude_1, p_feelsSoftNude_2];
+const feelsSoftNude = [p_feelsSoftNude_1, p_feelsSoftNude_2, p_feelsSoftNude_1, p_feelsSoftNude_2];
 // PRIMER FACIAL PERFECT SKIN.
 import primer_facial from '../assets/Products/OneProduct/Primer/PrimerFacialSkinPerfect.png';
 const primer = [primer_facial];
 // POLVO TRANSLÚCIDO FEELS.
 import polvoTranslucido_1 from '../assets/Products/OneProduct/PolvoTranslucido/PolvoTranslucido_1.png';
-const polvoTranslucido = [polvoTranslucido_1];
+const polvoTranslucido = [polvoTranslucido_1, polvoTranslucido_1, polvoTranslucido_1, polvoTranslucido_1];
 // HELLO MERMAID PALETTE.
 import helloMermaid_1 from '../assets/Products/ProductsWithCategories/PaletteHelloMermaid/HelloMermaid_1.png';
 import helloMermaid_2 from '../assets/Products/ProductsWithCategories/PaletteHelloMermaid/HelloMermaid_2.png';
 import helloMermaid_3 from '../assets/Products/ProductsWithCategories/PaletteHelloMermaid/HelloMermaid_3.png';
-const helloMermaid = [helloMermaid_1, helloMermaid_2, helloMermaid_3];
+const helloMermaid = [helloMermaid_1, helloMermaid_2, helloMermaid_3, helloMermaid_3];
 // PARADISE PALETTE.
 import paradise_p from '../assets/Products/ProductsWithCategories/PaletteParadise/Paradise.png'
-const paradise = [paradise_p];
+const paradise = [paradise_p, paradise_p, paradise_p, paradise_p];
 // VARIED QUEEN PALEET.
 import donutsPaleet_1 from '../assets/Products/ProductsWithCategories/PaleetVariedQueen/DonutsPalette.png';
-const donutsPaleet = [donutsPaleet_1];
+const donutsPaleet = [donutsPaleet_1, donutsPaleet_1, donutsPaleet_1, donutsPaleet_1];
 // VITAMIN C BIOAQUA.
 import vitamin_1 from '../assets/Products/OneProduct/VCBioAqua/VCBioaqua_1.png';
 import vitamin_2 from '../assets/Products/OneProduct/VCBioAqua/VCBioaqua_2.png';
-const vitaminC = [vitamin_1, vitamin_2];
+const vitaminC = [vitamin_1, vitamin_2, vitamin_2, vitamin_2];
 // ANTI WRINKLE EYE CREAM.
 import antyWrinkle from '../assets/Products/OneProduct/CremaOjosAEnvejecimiento/AntiWrinkleEyeCream.png';
-const eyeCream = [antyWrinkle];
+const eyeCream = [antyWrinkle, antyWrinkle, antyWrinkle, antyWrinkle];
 // POLVO BRONCEADOR DUAL.
 import polvoBronceadorD_1 from '../assets/Products/OneProduct/PolvoBronceador/PressedPowder_1.png';
 import polvoBronceadorD_2 from '../assets/Products/OneProduct/PolvoBronceador/PressedPowder_2.png';
-const polvoBronceador = [polvoBronceadorD_1, polvoBronceadorD_2];
+const polvoBronceador = [polvoBronceadorD_1, polvoBronceadorD_2, polvoBronceadorD_2, polvoBronceadorD_2];
 // HYALURONIC ACID.
 import hyaluronicAcid_1 from '../assets/Products/OneProduct/WaterGel/HyaluronicAcid_1.png';
 import hyaluronicAcid_2 from '../assets/Products/OneProduct/WaterGel/HyaluronicAcid_2.png';
-const waterGel = [hyaluronicAcid_1, hyaluronicAcid_2];
+const waterGel = [hyaluronicAcid_1, hyaluronicAcid_2, hyaluronicAcid_2, hyaluronicAcid_2];
 // EXFOLIANTE DE ARROZ.
 import exfoliante_1 from '../assets/Products/OneProduct/ExfolianteArroz/ExfolianteArroz_1.png';
 import exfoliante_2 from '../assets/Products/OneProduct/ExfolianteArroz/ExfolianteArroz_2.png';
-const exfolianteArroz = [exfoliante_1, exfoliante_2];
+const exfolianteArroz = [exfoliante_1, exfoliante_2, exfoliante_2, exfoliante_2];
 // SOMBRA PARA OJOS ANYLADY.
 import sombraOjos_1 from '../assets/Products/ProductsWithCategories/SombraOjos/SombraOjos_1.png';
 import sombraOjos_2 from '../assets/Products/ProductsWithCategories/SombraOjos/SombraOjos_2.png';
 import sombraOjos_3 from '../assets/Products/ProductsWithCategories/SombraOjos/SombraOjos_3.png';
-const sombrasOjos = [sombraOjos_1, sombraOjos_2, sombraOjos_3];
+const sombrasOjos = [sombraOjos_1, sombraOjos_2, sombraOjos_3, sombraOjos_3];
 // POLVO COMPACTO MEDIUM.
 import polvoCom_1 from '../assets/Products/OneProduct/PolvoCompacto/PolvoCom_1.png';
 import polvoCom_2 from '../assets/Products/OneProduct/PolvoCompacto/PolvoCom_2.png';
@@ -65,12 +65,12 @@ const basesBage = [bage_2, bage_3, bage_4, bage_5, bage_7];
 import tintRed from '../assets/Products/OneProduct/GelTint/gelRed.png';
 import tintJuice from '../assets/Products/OneProduct/GelTint/gelJuice.png';
 import tintPool from '../assets/Products/OneProduct/GelTint/gelPool.png';
-const tintGel = [tintRed, tintJuice, tintPool];
+const tintGel = [tintRed, tintJuice, tintPool, tintPool];
 // CARE LIPS.
 import careLip_1 from '../assets/Products/OneProduct/LabialCareLips/CareLips_1.png';
 import careLip_2 from '../assets/Products/OneProduct/LabialCareLips/CareLips_2.png';
 import careLip_3 from '../assets/Products/OneProduct/LabialCareLips/CareLips_3.png';
-const careLips = [careLip_1, careLip_2, careLip_3];
+const careLips = [careLip_1, careLip_2, careLip_3, careLip_3];
 
 
 

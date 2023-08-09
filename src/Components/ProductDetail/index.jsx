@@ -22,9 +22,9 @@ import TintJuice from "../GelTint/TintJuice";
 import TintRed from "../GelTint/TintRed";
 import TintPool from "../GelTint/TintPool";
 
-import CareLipCoffee from "../LabialCareLips/CareLipsCoffee";
-import CareLipLove from "../LabialCareLips/CareLipsLove";
-import CareLipMintFever from "../LabialCareLips/CareLipsMintFever";
+import CareLipsLove from "../LabialCareLips/CareLipsLove";
+import CareLipsCoffee from "../LabialCareLips/CareLipsCoffee";
+import CareLipsMintFever from "../LabialCareLips/CareLipsMintFever";
 
 const ProductDetail = () => {
   const {
@@ -63,35 +63,18 @@ const ProductDetail = () => {
       productDetails.image &&
       imagesPo == null &&
       imagesBase == null &&
-      gelTintImg == null &&
-      careLipsImg === null
+      careLipsImg === null &&
+      gelTintImg == null
     ) {
+      // console.log(productDetails.image);
       return <img src={productDetails.image[0]} alt={productDetails.title} />;
-    } else if (
-      imagesPo &&
-      imagesBase === null &&
-      gelTintImg === null &&
-      careLipsImg === null
-    ) {
+    } else if (imagesPo) {
       return <img src={imagesPo} alt={productDetails.title} />;
-    } else if (
-      imagesBase &&
-      imagesPo === null &&
-      gelTintImg === null &&
-      careLipsImg === null
-    ) {
+    } else if (imagesBase) {
       return <img src={imagesBase} alt={productDetails.title} />;
-    } else if (
-      (gelTintImg && imagesPo === null,
-      imagesBase === null && careLipsImg === null)
-    ) {
+    } else if (gelTintImg) {
       return <img src={gelTintImg} alt={productDetails.title} />;
-    } else if (
-      careLipsImg &&
-      gelTintImg === null &&
-      imagesBase === null &&
-      imagesPo === null
-    ) {
+    } else if (careLipsImg) {
       return <img src={careLipsImg} alt={productDetails.title} />;
     }
   };
@@ -162,15 +145,15 @@ const ProductDetail = () => {
 
             {careLipsName === "strawberry_love" &&
             productDetails.varietyNumber === 4 ? (
-              <CareLipLove />
+              <CareLipsLove />
             ) : null}
             {careLipsName === "mint_fever" &&
             productDetails.varietyNumber === 4 ? (
-              <CareLipMintFever />
+              <CareLipsMintFever />
             ) : null}
             {careLipsName === "coffee_break" &&
             productDetails.varietyNumber === 4 ? (
-              <CareLipCoffee />
+              <CareLipsCoffee />
             ) : null}
           </div>
           <div className="variety-container">
@@ -180,7 +163,6 @@ const ProductDetail = () => {
               setVarietyImages2(newImages2)}
             {productDetails.varietyNumber === 3 &&
               setVarietyImages3(newImages3)}
-
             {productDetails.varietyNumber === 4 &&
               setVarietyImages4(newImages4)}
           </div>

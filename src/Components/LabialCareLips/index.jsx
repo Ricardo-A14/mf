@@ -5,21 +5,16 @@ import { useContext } from "react";
 import "./LabialCareLips.css";
 
 const ExfolianteLabialCareLips = () => {
-  const {
-    // Tal vez haga interferencia porque es compartida con productos polvos.
-    varietyImages4,
-
-    setCareLipsName,
-
-    setCareLipsImg,
-  } = useContext(AppContext);
+  const { varietyImages4, careLipsName, setCareLipsName, setCareLipsImg } =
+    useContext(AppContext);
 
   const Love_click = () => {
-    setCareLipsName("strawberry_love");
+    setCareLipsName("strawberry_l");
     setCareLipsImg(varietyImages4[0]);
+    console.log(careLipsName);
   };
   const Love_over = () => {
-    setCareLipsName("strawberry_love");
+    setCareLipsName("strawberry_l");
   };
   const Love_out = () => {
     setCareLipsName("");
@@ -27,11 +22,12 @@ const ExfolianteLabialCareLips = () => {
   };
 
   const MintFever_click = () => {
-    setCareLipsName("mint_fever");
+    setCareLipsName("mint_f");
     setCareLipsImg(varietyImages4[1]);
+    console.log(careLipsName);
   };
   const MintFever_over = () => {
-    setCareLipsName("mint_fever");
+    setCareLipsName("mint_f");
   };
   const MintFever_out = () => {
     setCareLipsName("");
@@ -39,11 +35,12 @@ const ExfolianteLabialCareLips = () => {
   };
 
   const Coffee_click = () => {
-    setCareLipsName("coffee_break");
+    setCareLipsName("coffee_b");
     setCareLipsImg(varietyImages4[2]);
+    console.log(careLipsName);
   };
   const Coffee_over = () => {
-    setCareLipsName("coffee_break");
+    setCareLipsName("coffee_b");
   };
   const Coffee_out = () => {
     setCareLipsName("");

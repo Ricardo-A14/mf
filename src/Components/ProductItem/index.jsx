@@ -91,13 +91,13 @@ const ProductItem = ({ product }) => {
 
             {careLipsName === "strawberry_love" &&
             product.varietyNumber === 4 ? (
-              <div className="strawberry_love">LOVE</div>
+              <div className="strawberry_l">LOVE</div>
             ) : null}
             {careLipsName === "mint_fever" && product.varietyNumber === 4 ? (
-              <div className="mint_fever">FEVER</div>
+              <div className="mint_f">FEVER</div>
             ) : null}
             {careLipsName === "coffee_break" && product.varietyNumber === 4 ? (
-              <div className="coffee_break">COFFEE </div>
+              <div className="coffee_b">COFFEE </div>
             ) : null}
           </div>
         </div>
