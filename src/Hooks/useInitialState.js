@@ -43,11 +43,6 @@ const waterGel = [hyaluronicAcid_1, hyaluronicAcid_2, hyaluronicAcid_2, hyaluron
 import exfoliante_1 from '../assets/Products/OneProduct/ExfolianteArroz/ExfolianteArroz_1.png';
 import exfoliante_2 from '../assets/Products/OneProduct/ExfolianteArroz/ExfolianteArroz_2.png';
 const exfolianteArroz = [exfoliante_1, exfoliante_2, exfoliante_2, exfoliante_2];
-// SOMBRA PARA OJOS ANYLADY.
-import sombraOjos_1 from '../assets/Products/ProductsWithCategories/SombraOjos/SombraOjos_1.png';
-import sombraOjos_2 from '../assets/Products/ProductsWithCategories/SombraOjos/SombraOjos_2.png';
-import sombraOjos_3 from '../assets/Products/ProductsWithCategories/SombraOjos/SombraOjos_3.png';
-const sombrasOjos = [sombraOjos_1, sombraOjos_2, sombraOjos_3, sombraOjos_3];
 // POLVO COMPACTO MEDIUM.
 import polvoCom_1 from '../assets/Products/OneProduct/PolvoCompacto/PolvoCom_1.png';
 import polvoCom_2 from '../assets/Products/OneProduct/PolvoCompacto/PolvoCom_2.png';
@@ -67,10 +62,32 @@ import tintJuice from '../assets/Products/OneProduct/GelTint/gelJuice.png';
 import tintPool from '../assets/Products/OneProduct/GelTint/gelPool.png';
 const tintGel = [tintRed, tintJuice, tintPool, tintPool];
 // CARE LIPS.
-import careLip_1 from '../assets/Products/OneProduct/LabialCareLips/CareLips_1.png';
-import careLip_2 from '../assets/Products/OneProduct/LabialCareLips/CareLips_2.png';
-import careLip_3 from '../assets/Products/OneProduct/LabialCareLips/CareLips_3.png';
-const careLips = [careLip_1, careLip_2, careLip_3, careLip_3];
+import careLips_1 from '../assets/Products/OneProduct/LabialCareLips/CareLips_1.png';
+import careLips_2 from '../assets/Products/OneProduct/LabialCareLips/CareLips_2.png';
+import careLips_3 from '../assets/Products/OneProduct/LabialCareLips/CareLips_3.png';
+const careLips = [careLips_1, careLips_2, careLips_3, careLips_3];
+// PESTAÑINA.
+import pesta1 from '../assets/Products/OneProduct/Pestanina/pesta1.png';
+import pesta2 from '../assets/Products/OneProduct/Pestanina/pesta2.png';
+import pesta3 from '../assets/Products/OneProduct/Pestanina/pesta3.png';
+import pesta4 from '../assets/Products/OneProduct/Pestanina/pesta4.png';
+import pesta5 from '../assets/Products/OneProduct/Pestanina/pesta5.png';
+const pesta = [pesta1, pesta2, pesta3, pesta4, pesta5];
+// DELINEADOR DOLCE BELLA.
+import delineadorDB from '../assets/Products/OneProduct/DelineadorDB/Delineador_d_b.png';
+const delinedorDolce = [delineadorDB];
+// ESPUMA LIMPIADORA.
+import espumaLimpiadora from '../assets/Products/OneProduct/EspumaLimpiadora/EspumaLimpiadora.png';
+const espuma = [espumaLimpiadora];
+// passion palette.
+import passionPalette_AL from '../assets/Products/OneProduct/PassionPaletteAL//PassionPalette_A_L.png';
+const passionPalette = [passionPalette_AL];
+// BEAUTY BLENDER MAS BASE.
+import setSponjas from '../assets/Products/OneProduct/EsponjaConBase/esponja3.png';
+const esponjasConBase = [setSponjas];
+// UNICORN PALETTE ANY LADY.
+import uniconrPalette_A_L from '../assets/Products/OneProduct/UnicornPaletteAL/unicotnPalette_A_L.png';
+const unicornPalette = [uniconrPalette_A_L];
 
 
 
@@ -102,22 +119,26 @@ const useInitialState = () => {
     const [nombreBases, setNombreBases] = useState("");
     const [gelTintName, setGelTintName] = useState("");
     const [careLipsName, setCareLipsName] = useState("");
+    const [pestaName, setPestaName] = useState("");
 
     // TEST.
     const [varietyImages, setVarietyImages] = useState("");
     const [varietyImages2, setVarietyImages2] = useState("");
     const [varietyImages3, setVarietyImages3] = useState("");
     const [varietyImages4, setVarietyImages4] = useState("");
+    const [varietyImages5, setVarietyImages5] = useState("");
 
     const [imagesPo, setImagesPo] = useState(null);
     const [imagesBase, setImagesBase] = useState(null);
     const [gelTintImg, setGelTintImg] = useState(null);
     const [careLipsImg, setCareLipsImg] = useState(null);
+    const [pestaImg, sePestaImg] = useState(null);
 
     const [newImages, setNewImages] = useState(polvosCompactos);
     const [newImages2, setNewImages2] = useState(basesBage);
     const [newImages3, setNewImages3] = useState(tintGel);
     const [newImages4, setNewImages4] = useState(careLips);
+    const [newImages5, setNewImages5] = useState(pesta);
 
 
 
@@ -126,8 +147,9 @@ const useInitialState = () => {
         const productList = [
             {
                 id: 1,
-                title: `PALETA DE SOMBRAS FEELS SOFT NUDE RUBY ROSE`,
-                price: 50_000,
+                title: `Paleta de sombras Feels Soft Nude Ruby Rose.`,
+                price: '50.000',
+                rPrice: 50_000,
                 description: `Tiene 17 tonos con maravillosos tonos nude y rosa, además, 1 primer de ojos, ofreciendote infinitas posibilidades de maquillaje.
                 Soft Nude es de alta pigmentación, con una textura súper aterciopelada y suave.`,
                 image: feelsSoftNude,
@@ -137,8 +159,9 @@ const useInitialState = () => {
             },
             {
                 id: 2,
-                title: `PALETA DE SOMBRAS HELLO MERMAID ANYLADY`,
-                price: 42_000,
+                title: `Paleta de sombras Hello Mermaid Anylady.`,
+                price: '42.000',
+                rPrice: 42_000,
                 description: `Paleta de sombras con 57 tonos,
                 acabado mate y satinado,
                 calidad profesional,
@@ -153,8 +176,9 @@ const useInitialState = () => {
             },
             {
                 id: 3,
-                title: `PALETA DE SOMBRAS PARADISE ANYLADY`,
-                price: 42_000,
+                title: `Paleta de sombras Paradise Anylady.`,
+                price: '42.000',
+                rPrice: 42_000,
                 description: `Paleta de sombras con 35 tonos`,
                 image: paradise,
                 category: "maquillaje",
@@ -163,8 +187,9 @@ const useInitialState = () => {
             },
             {
                 id: 4,
-                title: `PALETA DE SOMBRAS VARIED QUEEN`,
-                price: 46_000,
+                title: `Paleta de sombras Varied Queen.`,
+                price: '46.000',
+                rPrice: 46_000,
                 description: `Paleta de sombras donuts varied
                 con 80 tonos.`,
                 image: donutsPaleet,
@@ -174,8 +199,9 @@ const useInitialState = () => {
             },
             {
                 id: 5,
-                title: `POLVO TRANSLÚCIDO FEELS`,
-                price: 28_000,
+                title: `Polvo translúcido Feels.`,
+                price: '28.000',
+                rPrice: 28_000,
                 description: `Tiene un acabado mate, una textura ultrafina y ligera que disimula pequeñas imperfecciones, dejando la piel seca y libre de grasa.
                 ¡Se adapta a todos los tonos de piel.`,
                 image: polvoTranslucido,
@@ -185,8 +211,9 @@ const useInitialState = () => {
             },
             {
                 id: 6,
-                title: `POLVO BRONCEADOR DUAL.`,
-                price: 22_000,
+                title: `Polvo bronceador Dual.`,
+                price: '22.000',
+                rPrice: 22_000,
                 description: `Polvo compacto bronceador con tono shimmer y mate dando un acabado perfecto a tu piel. Incluye un lado matte y un lado satinado, Alta durabilidad, Ideal para todos los tonos y tipos de piel`,
                 image: polvoBronceador,
                 category: "maquillaje",
@@ -195,20 +222,20 @@ const useInitialState = () => {
             },
             {
                 id: 7,
-                title: `SOMBRA PARA OJOS ANYLADY.`,
-                price: 20_000,
+                title: `Sombra para ojos Anylady.`,
+                price: '20.000', // 10.000 anylady store.
+                rPrice: 20_000,
                 description: `Producto de alta calidad.`,
-                image: sombrasOjos,
+                image: unicornPalette,
                 category: "maquillaje",
                 useVariety: false,
                 varietyNumber: 0
             },
-
-            // SkinCare
             {
                 id: 8,
-                title: `PRIMER FACIAL SKIN PERFECT`,
-                price: 29_000,
+                title: `Primer facial Skin Perfect.`,
+                price: '29.000',
+                rPrice: 29_000,
                 description: `Gran aliado para tu maquillaje, tiene una textura de silicona, suaviza la piel, minimiza la apariencia de los poros al hacer una capa delgada en la piel.`,
                 image: primer,
                 category: "skincare",
@@ -217,8 +244,9 @@ const useInitialState = () => {
             },
             {
                 id: 9,
-                title: `SUERO VITAMINA C BIOAQUA 100 ml`,
-                price: 20_000,
+                title: `Suero vitamina c Bioaqua 100 ml.`,
+                price: '20.000',
+                rPrice: 20_000,
                 description: `Para todo tipo de piel`,
                 image: vitaminC,
                 category: "skincare",
@@ -227,8 +255,9 @@ const useInitialState = () => {
             },
             {
                 id: 10,
-                title: `CREMA CONTORNO DE OJOS ANTI ENVEJECIMIENTO BIOAQUA.`,
-                price: 15_000,
+                title: `Crema contorno de ojos anti envejecimiento Bioaqua.`,
+                price: '15.000',
+                rPrice: 15_000,
                 description: `producto de belleza diseñado para cuidar y tratar la piel alrededor de los ojos. Esta área de la piel es conocida por ser más delicada y propensa a la aparición de arrugas, y otros signos de envejecimiento.`,
                 image: eyeCream,
                 category: "skincare",
@@ -237,8 +266,9 @@ const useInitialState = () => {
             },
             {
                 id: 11,
-                title: `ÁCIDO HIALURÓNICO BIOAQUA.`,
-                price: 21_000,
+                title: `Ácido hialurónico Bioaqua.`,
+                price: '21.000',
+                rPrice: 21_000,
                 description: `Hidratante y humectante, preventivo y correctivo de las arrugas, para todas las pieles, especialmente las secas.`,
                 image: waterGel,
                 category: "skincare",
@@ -247,8 +277,9 @@ const useInitialState = () => {
             },
             {
                 id: 12,
-                title: `EXFOLIANTE DE ARROZ BIOACUA.`,
-                price: 21_000,
+                title: `Exfoliante de arroz Bioaqua.`,
+                price: '21.000',
+                rPrice: 21_000,
                 description: `Una buena exfoliación previene el envejecimiento prematuro de la piel.`,
                 image: exfolianteArroz,
                 category: "skincare",
@@ -257,8 +288,9 @@ const useInitialState = () => {
             },
             {
                 id: 13,
-                title: `POLVOS COMPACTOS.`,
-                price: 25_000,
+                title: `Polvos compactos.`,
+                price: '25.000',
+                rPrice: 25_000,
                 description: `Proporciona un efecto natural en la piel, controla el exceso de brillo y disimula las manchas e imperfecciones de la piel.`,
                 image: polvosCompactos,
                 category: "maquillaje",
@@ -267,8 +299,9 @@ const useInitialState = () => {
             },
             {
                 id: 14,
-                title: `BÁSE LIQUIDA.`,
-                price: 29_000,
+                title: `Báse liquida.`,
+                price: '29.000',
+                rPrice: 29_000,
                 description: `Cuando se trata de maquillaje, siempre queremos una piel perfecta y natural. Pensando en ti, Ruby Rose crea la base Soft Matte.
                 Una base desarrollada para contener la grasa de la piel y ocultar las imperfecciones, además de proporcionar un excelente acabado, alta cobertura y larga duración.`,
                 image: basesBage,
@@ -278,8 +311,9 @@ const useInitialState = () => {
             },
             {
                 id: 15,
-                title: `GEL TINTA.`,
-                price: 20_000,
+                title: `Gel tinta.`,
+                price: '20.000',
+                rPrice: 20_000,
                 description: `Gel Tint es perfecto para realzar el color natural de tus labios con una excelente pigmentación de larga duración que deja los labios enrojecidos durante todo el día.
                 Además tus labios estarán hidratados y saludables durante todo el día, pues el GEL TINT está enriquecido con ÁCIDO HIALURÓNICO Y D-PANTENOL, además, huele delicioso!!.`,
                 image: tintGel,
@@ -289,8 +323,9 @@ const useInitialState = () => {
             },
             {
                 id: 16,
-                title: `EXFOLIANTE LABIAL CARE LIPS.`,
-                price: 12_000,
+                title: `Exfoliante labial Care Lips.`,
+                price: '12.000',
+                rPrice: 12_000,
                 description: `Exfoliante labial en barra, con un aroma irresistible a café.
                 Y sabes que es lo mejor de todo? Tiene aceites hidratantes y nutritivos!!`,
                 image: careLips,
@@ -298,8 +333,66 @@ const useInitialState = () => {
                 useVariety: true,
                 varietyNumber: 4
             },
-
-
+            {
+                id: 17,
+                title: `Pestañina Ruby Rose.`,
+                price: '16.000',
+                rPrice: 16_000,
+                description: `Exfoliante labial en barra, con un aroma irresistible a café.
+                Y sabes que es lo mejor de todo? Tiene aceites hidratantes y nutritivos!!`,
+                image: pesta,
+                category: "maquillaje",
+                useVariety: true,
+                varietyNumber: 5
+            },
+            {
+                id: 18,
+                title: `Plumón Delineador Ojos Lapiz Dolce Bella.`,
+                price: '19.000',
+                rPrice: 19_000,
+                description: `Delineador tipo crayón con punta flexible que permite lograr líneas precisas; gruesas o delgadas en un mismo trazo. Resalta tu mirada con Dolce Bella. `,
+                image: delinedorDolce,
+                category: "maquillaje",
+                useVariety: false,
+                varietyNumber: 0
+            },
+            {
+                id: 19,
+                title: `Espuma limpiadora desmaquillante facial protección urbana Ruby Skin.`,
+                price: '28.000',
+                rPrice: 28_000,
+                description: `Nuestra espuma limpiadora además de ser desmaquillante te ayuda a desintoxicar la piel de tu rostro removiendo rápidamente las toxinas e impurezas que se acumulan durante el día.`,
+                image: espuma,
+                category: "skincare",
+                useVariety: false,
+                varietyNumber: 0
+            },
+            {
+                id: 20,
+                title: `Paleta de sombras Passion Anylady`,
+                price: '32.000', // pink store price.
+                rPrice: 32_000,
+                description: `Paleta de sombras con 24 tonos,
+                calidad profesional,
+                Excelente pigmentación,
+                Fáciles de difuminar y de larga duración.`,
+                image: passionPalette,
+                category: "maquillaje",
+                useVariety: false,
+                varietyNumber: 0
+            },
+            {
+                id: 21,
+                title: `Beauty blender x 3 Mas Base`,
+                price: '15.000',
+                rPrice: 15_000,
+                description: `El set de esponjas es una excelente opción para aplicar y difuminar el maquillaje en crema. Incluye 3 esponjas suaves y
+                1 Soporte para esponja, ideal para mantener la esponja en una condición ventilada y aislada de la superficie.`,
+                image: esponjasConBase,
+                category: "maquillaje",
+                useVariety: false,
+                varietyNumber: 0
+            },
 
 
         ];
@@ -424,21 +517,26 @@ const useInitialState = () => {
         varietyImages2, setVarietyImages2,
         varietyImages3, setVarietyImages3,
         varietyImages4, setVarietyImages4,
+        varietyImages5, setVarietyImages5,
+
 
         nombrePolvos, setNombrePolvos,
         nombreBases, setNombreBases,
         gelTintName, setGelTintName,
         careLipsName, setCareLipsName,
+        pestaName, setPestaName,
 
         imagesPo, setImagesPo,
         imagesBase, setImagesBase,
         gelTintImg, setGelTintImg,
         careLipsImg, setCareLipsImg,
+        pestaImg, sePestaImg,
 
         newImages, setNewImages,
         newImages2, setNewImages2,
         newImages3, setNewImages3,
-        newImages4, setNewImages4
+        newImages4, setNewImages4,
+        newImages5, setNewImages5
 
     }
 }

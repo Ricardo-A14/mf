@@ -1,0 +1,114 @@
+.pestanina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    /* background-color: rgb(77, 68, 68); */
+}
+
+.pestanina span {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+.pestanina span:hover {
+    border: 2px solid black;
+}
+
+.pe1 {
+    background-image: url(./PestaImg/PestaBg1.png);
+}
+.pe2 {
+    background-image: url(./PestaImg/PestaBg2.png);
+}
+.pe3 {
+    background-image: url(./PestaImg/PestaBg3.png);
+}
+.pe4 {
+    background-image: url(./PestaImg/PestaBg4.png);
+}
+.pe5 {
+    background-image: url(./PestaImg/Pestabg5.png);
+}
+
+.pesta1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.pesta2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.pesta3 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.pesta4 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.pesta5 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+
+

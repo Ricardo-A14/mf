@@ -7,6 +7,7 @@ import PolvoMedium from "../PolvoMedium";
 import BaseLiquida from "../BaseLiquida";
 import GelTint from "../GelTint";
 import LabialCareLips from "../LabialCareLips";
+import Pestanina from "../Pestanina";
 
 const ProductItem = ({ product }) => {
   const {
@@ -16,11 +17,13 @@ const ProductItem = ({ product }) => {
     nombreBases,
     gelTintName,
     careLipsName,
+    pestaName,
 
     setImagesPo,
     setImagesBase,
     setGelTintImg,
     setCareLipsImg,
+    sePestaImg,
   } = useContext(AppContext);
 
   const HandleOnMouseOver = () => {
@@ -28,6 +31,7 @@ const ProductItem = ({ product }) => {
     setImagesBase(null);
     setGelTintImg(null);
     setCareLipsImg(null);
+    sePestaImg(null);
   };
 
   return (
@@ -49,55 +53,77 @@ const ProductItem = ({ product }) => {
             {product.varietyNumber === 2 && <BaseLiquida />}
             {product.varietyNumber === 3 && <GelTint />}
             {product.varietyNumber === 4 && <LabialCareLips />}
+            {product.varietyNumber === 5 && <Pestanina />}
 
             {nombrePolvos === "medium_1" && product.varietyNumber === 1 ? (
-              <div className="medium_1">MEDIUM 1</div>
+              <div className="medium_1">Medium 1</div>
             ) : null}
             {nombrePolvos === "medium_2" && product.varietyNumber === 1 ? (
-              <div className="medium_2">MEDIUM 2</div>
+              <div className="medium_2">Medium 2</div>
             ) : null}
             {nombrePolvos === "medium_3" && product.varietyNumber === 1 ? (
-              <div className="medium_3">MEDIUM 4</div>
+              <div className="medium_3">Medium 4</div>
             ) : null}
             {nombrePolvos === "medium_4" && product.varietyNumber === 1 ? (
-              <div className="medium_4">MEDIUM 5</div>
+              <div className="medium_4">Medium 5</div>
             ) : null}
 
             {nombreBases === "bage_2" && product.varietyNumber === 2 ? (
-              <div className="bage_2">BAGE 2</div>
+              <div className="bage_2">Bage 2</div>
             ) : null}
             {nombreBases === "bage_3" && product.varietyNumber === 2 ? (
-              <div className="bage_3">BAGE 3</div>
+              <div className="bage_3">Bage 3</div>
             ) : null}
             {nombreBases === "bage_4" && product.varietyNumber === 2 ? (
-              <div className="bage_4">BAGE 4</div>
+              <div className="bage_4">Bage 4</div>
             ) : null}
             {nombreBases === "bage_5" && product.varietyNumber === 2 ? (
-              <div className="bage_5">BAGE 5</div>
+              <div className="bage_5">Bage 5</div>
             ) : null}
             {nombreBases === "bage_7" && product.varietyNumber === 2 ? (
-              <div className="bage_7">BAGE 7</div>
+              <div className="bage_7">Bage 7</div>
             ) : null}
 
             {gelTintName === "tint_red" && product.varietyNumber === 3 ? (
-              <div className="tint_red">RED</div>
+              <div className="tint_red">Gel tint fresh red</div>
             ) : null}
             {gelTintName === "tint_juice" && product.varietyNumber === 3 ? (
-              <div className="tint_juice">JUICE</div>
+              <div className="tint_juice">Gel tint cranberry Juice</div>
             ) : null}
             {gelTintName === "tint_pool" && product.varietyNumber === 3 ? (
-              <div className="tint_pool">POOL</div>
+              <div className="tint_pool">Gel tint pitaya Pool</div>
             ) : null}
 
-            {careLipsName === "strawberry_love" &&
-            product.varietyNumber === 4 ? (
-              <div className="strawberry_l">LOVE</div>
+            {careLipsName === "strawberry_l" && product.varietyNumber === 4 ? (
+              <div className="strawberry_l">
+                Labial Care Lips Fun Strawberry Love
+              </div>
             ) : null}
-            {careLipsName === "mint_fever" && product.varietyNumber === 4 ? (
-              <div className="mint_f">FEVER</div>
+            {careLipsName === "mint_f" && product.varietyNumber === 4 ? (
+              <div className="mint_f">Labial Care Lips Fun Mint Fever</div>
             ) : null}
-            {careLipsName === "coffee_break" && product.varietyNumber === 4 ? (
-              <div className="coffee_b">COFFEE </div>
+            {careLipsName === "coffee_b" && product.varietyNumber === 4 ? (
+              <div className="coffee_b">Labial care Lips Fun Coffee Break</div>
+            ) : null}
+
+            {pestaName === "pesta1" && product.varietyNumber === 5 ? (
+              <div className="pesta1">Pestañina voluminosas y curvas</div>
+            ) : null}
+            {pestaName === "pesta2" && product.varietyNumber === 5 ? (
+              <div className="pesta2">Pestañina curvas y volumen expres</div>
+            ) : null}
+            {pestaName === "pesta3" && product.varietyNumber === 5 ? (
+              <div className="pesta3">
+                Pestañinas super voluminosas y definidas
+              </div>
+            ) : null}
+            {pestaName === "pesta4" && product.varietyNumber === 5 ? (
+              <div className="pesta4">
+                Pestañina extra gruesas y covertura negra
+              </div>
+            ) : null}
+            {pestaName === "pesta5" && product.varietyNumber === 5 ? (
+              <div className="pesta5">Pestañina alargadas y con volumen</div>
             ) : null}
           </div>
         </div>

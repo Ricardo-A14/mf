@@ -5,6 +5,7 @@ import PolvoMedium from "../PolvoMedium";
 import BaseLiquida from "../BaseLiquida";
 import LabialCareLips from "../LabialCareLips";
 import GelTint from "../GelTint";
+import Pestanina from "../Pestanina";
 
 const useVariety = () => {
   const { useVariety } = useContext(AppContext);
@@ -16,6 +17,7 @@ const useVariety = () => {
         {useVariety.varietyNumber === 2 && <BaseLiquida />}
         {useVariety.varietyNumber === 3 && <GelTint />}
         {useVariety.varietyNumber === 4 && <LabialCareLips />}
+        {useVariety.varietyNumber === 5 && <Pestanina />}
       </div>
     );
   };

@@ -34,36 +34,36 @@
 
 .strawberry_l {
     position: absolute;
-    top: 75px;
-    left: 2px;
-    width: 120px;
-    font-size: 14px;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    font-size: 13px;
+    height: 18px;
     text-align: center;
-    border-radius: 5px;
     color: white;
-    background-color: rgb(59, 58, 58);
+    background-color: black;
 }
 .mint_f {
     position: absolute;
-    top: 75px;
-    left: 85px;
-    width: 120px;
-    font-size: 14px;
+    top: 80px;
+    left: 12px;
+    width: 90%;
+    height: 18px;
+    font-size: 13px;
     text-align: center;
-    border-radius: 5px;
     color: white;
-    background-color: rgb(59, 58, 58);
+    background-color: black;
 }
 .coffee_b {
     position: absolute;
-    top: 75px;
-    right: 2px;
-    width: 120px;
+    top: 80px;
+    right: 6px;
+    width: 95%;
+    height: 18px;
     font-size: 14px;
     text-align: center;
-    border-radius: 5px;
     color: white;
-    background-color: rgb(59, 58, 58);
+    background-color: black;
 }
 
 
