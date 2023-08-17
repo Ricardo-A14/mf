@@ -1,0 +1,31 @@
+
+.extrude {
+    position: absolute;
+    left: 8px;
+    width: 80%;
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color:black;
+}
+
+@media(max-width: 640px){
+
+    .extrude {
+        left: 10%;
+        width: 40%;
+    }
+}
+@media(max-width: 530px){
+
+    .extrude {
+        width: 50%;
+    }
+}
+@media(max-width: 320px){
+
+    .extrude {
+        left: 3%;
+    }
+}

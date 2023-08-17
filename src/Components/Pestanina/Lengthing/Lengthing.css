@@ -1,0 +1,30 @@
+
+.lengthing {
+    position: absolute;
+    right: 16px;
+    width: 90%;
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color:black;
+}
+
+@media(max-width: 640px){
+    .lengthing {
+        right: 6%;
+        width: 50%;
+    }
+}
+@media(max-width: 530px){
+
+    .lengthing {
+        width: 60%;
+    }
+}
+@media(max-width: 320px){
+
+    .lengthing {
+        right: 3%;
+    }
+}

@@ -1,0 +1,31 @@
+
+.full-exposure {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color:black;
+}
+
+@media(max-width: 640px){
+
+    .full-exposure {
+        left: 24%;
+        width: 50%;
+    }
+}
+@media(max-width: 530px){
+
+    .full-exposure {
+        width: 60%;
+    }
+}
+@media(max-width: 320px){
+
+    .full-exposure {
+        left: 3%;
+    }
+}

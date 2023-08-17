@@ -22,9 +22,15 @@ import TintJuice from "../GelTint/TintJuice";
 import TintRed from "../GelTint/TintRed";
 import TintPool from "../GelTint/TintPool";
 
-import CareLipCoffee from "../LabialCareLips/CareLipsCoffee";
-import CareLipLove from "../LabialCareLips/CareLipsLove";
-import CareLipMintFever from "../LabialCareLips/CareLipsMintFever";
+import CareLipsLove from "../LabialCareLips/CareLipsLove";
+import CareLipsCoffee from "../LabialCareLips/CareLipsCoffee";
+import CareLipsMintFever from "../LabialCareLips/CareLipsMintFever";
+
+import Curl from "../Pestanina/Curl";
+import Extrude from "../Pestanina/Extrude";
+import FullExposure from "../Pestanina/FullExposure";
+import Lengthing from "../Pestanina/Lengthing";
+import Unlashed from "../Pestanina/Unlashed";
 
 const ProductDetail = () => {
   const {
@@ -36,21 +42,25 @@ const ProductDetail = () => {
     setVarietyImages2,
     setVarietyImages3,
     setVarietyImages4,
+    setVarietyImages5,
 
     nombrePolvos,
     nombreBases,
     gelTintName,
     careLipsName,
+    pestaName,
 
     imagesPo,
     imagesBase,
     gelTintImg,
     careLipsImg,
+    pestaImg,
 
     newImages,
     newImages2,
     newImages3,
     newImages4,
+    newImages5,
   } = useContext(AppContext);
 
   /*-------  UNSTABLE  -------------------- */
@@ -63,36 +73,21 @@ const ProductDetail = () => {
       productDetails.image &&
       imagesPo == null &&
       imagesBase == null &&
+      careLipsImg == null &&
       gelTintImg == null &&
-      careLipsImg === null
+      pestaImg == null
     ) {
       return <img src={productDetails.image[0]} alt={productDetails.title} />;
-    } else if (
-      imagesPo &&
-      imagesBase === null &&
-      gelTintImg === null &&
-      careLipsImg === null
-    ) {
+    } else if (imagesPo) {
       return <img src={imagesPo} alt={productDetails.title} />;
-    } else if (
-      imagesBase &&
-      imagesPo === null &&
-      gelTintImg === null &&
-      careLipsImg === null
-    ) {
+    } else if (imagesBase) {
       return <img src={imagesBase} alt={productDetails.title} />;
-    } else if (
-      (gelTintImg && imagesPo === null,
-      imagesBase === null && careLipsImg === null)
-    ) {
+    } else if (gelTintImg) {
       return <img src={gelTintImg} alt={productDetails.title} />;
-    } else if (
-      careLipsImg &&
-      gelTintImg === null &&
-      imagesBase === null &&
-      imagesPo === null
-    ) {
+    } else if (careLipsImg) {
       return <img src={careLipsImg} alt={productDetails.title} />;
+    } else if (pestaImg) {
+      return <img src={pestaImg} alt={productDetails.title} />;
     }
   };
 
@@ -160,17 +155,32 @@ const ProductDetail = () => {
               <TintPool />
             ) : null}
 
-            {careLipsName === "strawberry_love" &&
+            {careLipsName === "strawberry_l" &&
             productDetails.varietyNumber === 4 ? (
-              <CareLipLove />
+              <CareLipsLove />
             ) : null}
-            {careLipsName === "mint_fever" &&
-            productDetails.varietyNumber === 4 ? (
-              <CareLipMintFever />
+            {careLipsName === "mint_f" && productDetails.varietyNumber === 4 ? (
+              <CareLipsMintFever />
             ) : null}
-            {careLipsName === "coffee_break" &&
+            {careLipsName === "coffee_b" &&
             productDetails.varietyNumber === 4 ? (
-              <CareLipCoffee />
+              <CareLipsCoffee />
+            ) : null}
+
+            {pestaName === "pesta1" && productDetails.varietyNumber === 5 ? (
+              <Curl />
+            ) : null}
+            {pestaName === "pesta2" && productDetails.varietyNumber === 5 ? (
+              <Extrude />
+            ) : null}
+            {pestaName === "pesta3" && productDetails.varietyNumber === 5 ? (
+              <FullExposure />
+            ) : null}
+            {pestaName === "pesta4" && productDetails.varietyNumber === 5 ? (
+              <Lengthing />
+            ) : null}
+            {pestaName === "pesta5" && productDetails.varietyNumber === 5 ? (
+              <Unlashed />
             ) : null}
           </div>
           <div className="variety-container">
@@ -180,9 +190,10 @@ const ProductDetail = () => {
               setVarietyImages2(newImages2)}
             {productDetails.varietyNumber === 3 &&
               setVarietyImages3(newImages3)}
-
             {productDetails.varietyNumber === 4 &&
               setVarietyImages4(newImages4)}
+            {productDetails.varietyNumber === 5 &&
+              setVarietyImages5(newImages5)}
           </div>
         </div>
 

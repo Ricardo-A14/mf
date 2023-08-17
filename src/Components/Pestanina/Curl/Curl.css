@@ -1,0 +1,32 @@
+
+.curl {
+    position: absolute;
+    left: 8px;
+    width: 70%;
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color:black;
+}
+
+@media(max-width: 640px){
+
+    .curl {
+        left: 4%;
+        width: 35%;
+    }
+}
+@media(max-width: 530px){
+
+    .curl {
+        left: 3%;
+        width: 50%;
+    }
+}
+@media(max-width: 320px){
+
+    .curl {
+        left: 3%;
+    }
+}

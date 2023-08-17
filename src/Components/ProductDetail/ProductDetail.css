@@ -30,6 +30,8 @@
 }
 
 .product-detail-img {
+    display: flex;
+    justify-content: center;
     width: 90%;
     height: 40%;
     margin: 0 auto;
@@ -38,7 +40,7 @@
 }
 
 .product-detail-img img {
-    width: 100%;
+    width: 90%;
     height: 100%;
     border-radius: 15px;
 }
