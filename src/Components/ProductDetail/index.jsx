@@ -18,23 +18,39 @@ import Bage4 from "../BaseLiquida/Bage4";
 import Bage5 from "../BaseLiquida/Bage5";
 import Bage7 from "../BaseLiquida/Bage7";
 
+import TintJuice from "../GelTint/TintJuice";
+import TintRed from "../GelTint/TintRed";
+import TintPool from "../GelTint/TintPool";
+
+import CareLipCoffee from "../LabialCareLips/CareLipsCoffee";
+import CareLipLove from "../LabialCareLips/CareLipsLove";
+import CareLipMintFever from "../LabialCareLips/CareLipsMintFever";
+
 const ProductDetail = () => {
   const {
     setOpenProductDetail,
     productDetails,
     HandleUseVariety,
+
     setVarietyImages,
-    varietyImages,
     setVarietyImages2,
-    varietyImages2,
+    setVarietyImages3,
+    setVarietyImages4,
+
     nombrePolvos,
     nombreBases,
+    gelTintName,
+    careLipsName,
+
     imagesPo,
     imagesBase,
-    setNewImages,
-    setNewImages2,
+    gelTintImg,
+    careLipsImg,
+
     newImages,
     newImages2,
+    newImages3,
+    newImages4,
   } = useContext(AppContext);
 
   /*-------  UNSTABLE  -------------------- */
@@ -43,12 +59,40 @@ const ProductDetail = () => {
   /*-------  UNSTABLE  -------------------- */
 
   const HandleVarietyImages = () => {
-    if (productDetails.image && imagesPo == null && imagesBase == null) {
+    if (
+      productDetails.image &&
+      imagesPo == null &&
+      imagesBase == null &&
+      gelTintImg == null &&
+      careLipsImg === null
+    ) {
       return <img src={productDetails.image[0]} alt={productDetails.title} />;
-    } else if (imagesPo && imagesBase === null) {
+    } else if (
+      imagesPo &&
+      imagesBase === null &&
+      gelTintImg === null &&
+      careLipsImg === null
+    ) {
       return <img src={imagesPo} alt={productDetails.title} />;
-    } else if (imagesBase && imagesPo === null) {
+    } else if (
+      imagesBase &&
+      imagesPo === null &&
+      gelTintImg === null &&
+      careLipsImg === null
+    ) {
       return <img src={imagesBase} alt={productDetails.title} />;
+    } else if (
+      (gelTintImg && imagesPo === null,
+      imagesBase === null && careLipsImg === null)
+    ) {
+      return <img src={gelTintImg} alt={productDetails.title} />;
+    } else if (
+      careLipsImg &&
+      gelTintImg === null &&
+      imagesBase === null &&
+      imagesPo === null
+    ) {
+      return <img src={careLipsImg} alt={productDetails.title} />;
     }
   };
 
@@ -102,12 +146,43 @@ const ProductDetail = () => {
             {nombreBases === "bage_7" && productDetails.varietyNumber === 2 ? (
               <Bage7 />
             ) : null}
+
+            {gelTintName === "tint_red" &&
+            productDetails.varietyNumber === 3 ? (
+              <TintRed />
+            ) : null}
+            {gelTintName === "tint_juice" &&
+            productDetails.varietyNumber === 3 ? (
+              <TintJuice />
+            ) : null}
+            {gelTintName === "tint_pool" &&
+            productDetails.varietyNumber === 3 ? (
+              <TintPool />
+            ) : null}
+
+            {careLipsName === "strawberry_love" &&
+            productDetails.varietyNumber === 4 ? (
+              <CareLipLove />
+            ) : null}
+            {careLipsName === "mint_fever" &&
+            productDetails.varietyNumber === 4 ? (
+              <CareLipMintFever />
+            ) : null}
+            {careLipsName === "coffee_break" &&
+            productDetails.varietyNumber === 4 ? (
+              <CareLipCoffee />
+            ) : null}
           </div>
           <div className="variety-container">
             {productDetails.useVariety && <UseVariety />}
             {productDetails.varietyNumber === 1 && setVarietyImages(newImages)}
             {productDetails.varietyNumber === 2 &&
               setVarietyImages2(newImages2)}
+            {productDetails.varietyNumber === 3 &&
+              setVarietyImages3(newImages3)}
+
+            {productDetails.varietyNumber === 4 &&
+              setVarietyImages4(newImages4)}
           </div>
         </div>
 

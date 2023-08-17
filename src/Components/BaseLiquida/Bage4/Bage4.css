@@ -35,3 +35,9 @@
         left: 41%;
     }
 }
+@media(max-width: 320px){
+
+    .bage_4_detail {
+        left: 40%;
+    }
+}

@@ -15,10 +15,25 @@
     height: 16px;
     margin: 0 4px;
     border-radius: 50%;
-    background-color: blueviolet;
 }
+.base_liquida .b2 {
+    background-image: url(./BageImg/bage2.png);
+}
+.base_liquida .b3 {
+    background-image: url(./BageImg/bage3.png);
+}
+.base_liquida .b4 {
+    background-image: url(./BageImg/bage4.png);
+}
+.base_liquida .b5 {
+    background-image: url(./BageImg/bage5.png);
+}
+.base_liquida .b7 {
+    background-image: url(./BageImg/bage7.png);
+}
+
 .base_liquida span:hover {
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .bage_2 {

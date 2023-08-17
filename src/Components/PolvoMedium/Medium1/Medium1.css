@@ -16,16 +16,15 @@
     }
 }
 
-@media(max-width: 520px) {
-
-    .medium_1_detail {
-        left: 5%;
-    }
-}
-
-@media(max-width: 430px) {
+@media(max-width: 400px) {
 
     .medium_1_detail {
         left: 4%;
+
     }
+}
+
+.medium_1_detail {
+    left: 4%;
+}
 }

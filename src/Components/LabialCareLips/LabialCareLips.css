@@ -1,0 +1,69 @@
+.care_lips {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    /* background-color: rgb(77, 68, 68); */
+
+}
+
+.care_lips span {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+.care_lips span:hover {
+    border: 2px solid black;
+
+}
+
+.love {
+    background-image: url(./CareLipsImg/cl1.png);
+}
+.fever {
+    background-image: url(./CareLipsImg/cl2.png);
+}
+.coffee {
+    background-image: url(./CareLipsImg/cl3.png);
+}
+
+.strawberry_love {
+    position: absolute;
+    top: 75px;
+    left: 2px;
+    width: 120px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(59, 58, 58);
+}
+.mint_fever {
+    position: absolute;
+    top: 75px;
+    left: 85px;
+    width: 120px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(59, 58, 58);
+}
+.coffee_break {
+    position: absolute;
+    top: 75px;
+    right: 2px;
+    width: 120px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(59, 58, 58);
+}
+
+

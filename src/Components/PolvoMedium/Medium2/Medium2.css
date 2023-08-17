@@ -12,9 +12,35 @@
 @media(max-width: 430px) {
 
     .medium_2_detail {
-        left: 29%;
+        left: 32%;
+
     }
 }
+
+@media(max-width: 550px) {
+
+    .medium_2_detail {
+        left: 31%;
+
+    }
+}
+
+@media(max-width: 430px) {
+
+    .medium_2_detail {
+        left: 29%;
+
+    }
+}
+
+@media(max-width: 330px) {
+
+    .medium_2_detail {
+        left: 27%;
+
+    }
+}
+
 
 @media(max-width: 330px) {
 

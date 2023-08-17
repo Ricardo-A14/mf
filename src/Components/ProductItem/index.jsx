@@ -5,19 +5,29 @@ import AppContext from "../../Context";
 
 import PolvoMedium from "../PolvoMedium";
 import BaseLiquida from "../BaseLiquida";
+import GelTint from "../GelTint";
+import LabialCareLips from "../LabialCareLips";
 
 const ProductItem = ({ product }) => {
   const {
     GetProductDetails,
+
     nombrePolvos,
     nombreBases,
+    gelTintName,
+    careLipsName,
+
     setImagesPo,
     setImagesBase,
+    setGelTintImg,
+    setCareLipsImg,
   } = useContext(AppContext);
 
   const HandleOnMouseOver = () => {
     setImagesPo(null);
     setImagesBase(null);
+    setGelTintImg(null);
+    setCareLipsImg(null);
   };
 
   return (
@@ -34,9 +44,12 @@ const ProductItem = ({ product }) => {
         <div className="div-info">
           <p className="title">{product.title}</p>
           <p className="price">$ {product.price}</p>
+          {console.log(parseFloat(product.price))};
           <div className="variety-product">
             {product.varietyNumber === 1 && <PolvoMedium />}
             {product.varietyNumber === 2 && <BaseLiquida />}
+            {product.varietyNumber === 3 && <GelTint />}
+            {product.varietyNumber === 4 && <LabialCareLips />}
 
             {nombrePolvos === "medium_1" && product.varietyNumber === 1 ? (
               <div className="medium_1">MEDIUM 1</div>
@@ -66,8 +79,30 @@ const ProductItem = ({ product }) => {
             {nombreBases === "bage_7" && product.varietyNumber === 2 ? (
               <div className="bage_7">BAGE 7</div>
             ) : null}
+
+            {gelTintName === "tint_red" && product.varietyNumber === 3 ? (
+              <div className="tint_red">RED</div>
+            ) : null}
+            {gelTintName === "tint_juice" && product.varietyNumber === 3 ? (
+              <div className="tint_juice">JUICE</div>
+            ) : null}
+            {gelTintName === "tint_pool" && product.varietyNumber === 3 ? (
+              <div className="tint_pool">POOL</div>
+            ) : null}
+
+            {careLipsName === "strawberry_love" &&
+              product.varietyNumber === 4 ? (
+              <div className="strawberry_love">LOVE</div>
+            ) : null}
+            {careLipsName === "mint_fever" && product.varietyNumber === 4 ? (
+              <div className="mint_fever">FEVER</div>
+            ) : null}
+            {careLipsName === "coffee_break" && product.varietyNumber === 4 ? (
+              <div className="coffee_break">COFFEE </div>
+            ) : null}
           </div>
         </div>
+
 
         {/* <figure className="icon-cart">
           <img src="" alt="" />

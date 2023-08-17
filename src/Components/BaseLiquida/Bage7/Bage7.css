@@ -12,7 +12,7 @@
 @media(max-width: 640px) {
 
     .bage_7_detail {
-        right: 6%;
+        right: 5%;
     }
 }
 
@@ -28,4 +28,14 @@
     .bage_7_detail {
         right: 4%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+@media(max-width: 320px){
+
+    .bage_7_detail {
+        right: 2%;
+    }
+}
+>>>>>>> 02ec9e00f993aa33177ec80878ed52295b132517

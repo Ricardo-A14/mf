@@ -1,0 +1,24 @@
+
+.coffee_detail {
+    position: absolute;
+    right: 8px;
+    width: 70px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(59, 58, 58);
+}
+
+@media(max-width: 640px){
+
+    .coffee_detail {
+        right: 6%;
+    }
+}
+@media(max-width: 320px){
+
+    .coffee_detail {
+        right: 8px;
+    }
+}

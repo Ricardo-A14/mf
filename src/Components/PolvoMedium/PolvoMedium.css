@@ -15,10 +15,26 @@
     height: 16px;
     margin: 0 4px;
     border-radius: 50%;
-    background-color: cadetblue;
 }
+.polvo_medium .m1 {
+    background-image: url(./MediumImg/med1.png);
+
+}
+.polvo_medium .m2 {
+    background-image: url(./MediumImg/med2.png);
+
+}
+.polvo_medium .m4 {
+    background-image: url(./MediumImg/med4.png);
+
+}
+.polvo_medium .m5 {
+    background-image: url(./MediumImg/med5.png);
+
+}
+
 .polvo_medium span:hover {
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .medium_1 {

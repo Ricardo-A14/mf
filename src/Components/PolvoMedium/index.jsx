@@ -5,13 +5,8 @@ import { useContext } from "react";
 import "./PolvoMedium.css";
 
 const PolvoMedium = () => {
-  const {
-    varietyImages,
-
-    setNombrePolvos,
-
-    setImagesPo,
-  } = useContext(AppContext);
+  const { varietyImages, setNombrePolvos, setImagesPo } =
+    useContext(AppContext);
 
   const Medium_1_click = () => {
     setNombrePolvos("medium_1");
@@ -64,25 +59,25 @@ const PolvoMedium = () => {
   return (
     <div className="polvo_medium">
       <span
-        className=""
+        className="m1"
         onClick={() => Medium_1_click()}
         onMouseOver={() => Medium_1_over()}
         onMouseOut={() => Medium_1_out()}
       ></span>
       <span
-        className=""
+        className="m2"
         onClick={() => Medium_2_click()}
         onMouseOver={() => Medium_2_over()}
         onMouseOut={() => Medium_2_out()}
       ></span>
       <span
-        className=""
+        className="m4"
         onClick={() => Medium_3_click()}
         onMouseOver={() => Medium_3_over()}
         onMouseOut={() => Medium_3_out()}
       ></span>
       <span
-        className=""
+        className="m5"
         onClick={() => Medium_4_click()}
         onMouseOver={() => Medium_4_over()}
         onMouseOut={() => Medium_4_out()}
