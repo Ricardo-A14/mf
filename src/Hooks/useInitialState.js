@@ -84,8 +84,10 @@ const espuma = [espumaLimpiadora];
 import passionPalette_AL from '../assets/Products/OneProduct/PassionPaletteAL//PassionPalette_A_L.png';
 const passionPalette = [passionPalette_AL];
 // BEAUTY BLENDER MAS BASE.
-import setSponjas from '../assets/Products/OneProduct/EsponjaConBase/esponja3.png';
-const esponjasConBase = [setSponjas];
+import setSponjas1 from '../assets/Products/OneProduct/EsponjaConBase/esponja3.png';
+const esponjasConBase1 = [setSponjas1];
+import setSponjas2 from '../assets/Products/OneProduct/EsponjaConBase/Bb3.png';
+const esponjasConBase2 = [setSponjas2];
 // UNICORN PALETTE ANY LADY.
 import uniconrPalette_A_L from '../assets/Products/OneProduct/UnicornPaletteAL/unicotnPalette_A_L.png';
 const unicornPalette = [uniconrPalette_A_L];
@@ -389,7 +391,19 @@ const useInitialState = () => {
                 rPrice: 15_000,
                 description: `El set de esponjas es una excelente opción para aplicar y difuminar el maquillaje en crema. Incluye 3 esponjas suaves y
                 1 Soporte para esponja, ideal para mantener la esponja en una condición ventilada y aislada de la superficie.`,
-                image: esponjasConBase,
+                image: esponjasConBase1,
+                category: "maquillaje",
+                useVariety: false,
+                varietyNumber: 0
+            },
+            {
+                id: 22,
+                title: `Beauty blender x 3 Mas Base`,
+                price: '15.000',
+                rPrice: 15_000,
+                description: `El set de esponjas es una excelente opción para aplicar y difuminar el maquillaje en crema. Incluye 3 esponjas suaves y
+                1 Soporte para esponja, ideal para mantener la esponja en una condición ventilada y aislada de la superficie.`,
+                image: esponjasConBase2,
                 category: "maquillaje",
                 useVariety: false,
                 varietyNumber: 0

@@ -48,7 +48,7 @@ const ProductItem = ({ product }) => {
         <div className="div-info">
           <p className="title">{product.title}</p>
           <p className="price">$ {product.price}</p>
-          {console.log(parseFloat(product.price))};
+          {console.log(parseFloat(product.price))}
           <div className="variety-product">
             {product.varietyNumber === 1 && <PolvoMedium />}
             {product.varietyNumber === 2 && <BaseLiquida />}

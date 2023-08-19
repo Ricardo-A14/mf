@@ -12,7 +12,6 @@
 
     .medium_5_detail {
         right: 6%;
-
     }
 }
 
@@ -20,7 +19,6 @@
 
     .medium_5_detail {
         right: 5%;
-
     }
 }
 
@@ -28,14 +26,13 @@
 
     .medium_5_detail {
         right: 3%;
-
     }
 }
 
 .medium_5_detail {
     right: 4%;
 }
-}
+
 
 @media(max-width: 330px) {
 
