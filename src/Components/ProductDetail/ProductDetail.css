@@ -98,6 +98,10 @@
         height: 95vh;
         /* background-color: rosybrown; */
     }
+    .product-detail-img {
+        width: 70%;        
+        /* background-color: cornflowerblue; */
+    }
 }
 
 @media(max-width: 513px) {

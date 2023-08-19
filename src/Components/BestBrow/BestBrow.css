@@ -1,0 +1,75 @@
+
+.best_brow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    /* background-color: bisque; */
+}
+.best_brow span {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+.best_brow span:hover {
+    border: 2px solid black;
+}
+
+.light-brow {
+    background-image: url(./BestBrowImg/lightImg.png);
+}
+.medium-brow {
+    background-image: url(./BestBrowImg/mediumImg.png);
+
+}
+.dark-brow {
+    background-image: url(./BestBrowImg/darkImg.png);
+
+}
+
+.light_brow {
+    position: absolute;
+    top: 95px;
+    left: 2px;
+    width: 160px;
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.medium_brow {
+    position: absolute;
+    top: 95px;
+    left: 10%;
+    width: 180px;
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.dark_brow {
+    position: absolute;
+    top: 95px;
+    right: 2px;
+    width: 160px;
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+

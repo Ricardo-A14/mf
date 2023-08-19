@@ -8,6 +8,7 @@ import BaseLiquida from "../BaseLiquida";
 import GelTint from "../GelTint";
 import LabialCareLips from "../LabialCareLips";
 import Pestanina from "../Pestanina";
+import BestBrow from "../BestBrow";
 
 const ProductItem = ({ product }) => {
   const {
@@ -18,12 +19,14 @@ const ProductItem = ({ product }) => {
     gelTintName,
     careLipsName,
     pestaName,
+    bestBrowName,
 
     setImagesPo,
     setImagesBase,
     setGelTintImg,
     setCareLipsImg,
     sePestaImg,
+    setBestBrowImg,
   } = useContext(AppContext);
 
   const HandleOnMouseOver = () => {
@@ -32,6 +35,7 @@ const ProductItem = ({ product }) => {
     setGelTintImg(null);
     setCareLipsImg(null);
     sePestaImg(null);
+    setBestBrowImg(null);
   };
 
   return (
@@ -55,6 +59,7 @@ const ProductItem = ({ product }) => {
             {product.varietyNumber === 3 && <GelTint />}
             {product.varietyNumber === 4 && <LabialCareLips />}
             {product.varietyNumber === 5 && <Pestanina />}
+            {product.varietyNumber === 6 && <BestBrow />}
 
             {nombrePolvos === "medium_1" && product.varietyNumber === 1 ? (
               <div className="medium_1">Medium 1</div>
@@ -126,9 +131,18 @@ const ProductItem = ({ product }) => {
             {pestaName === "pesta5" && product.varietyNumber === 5 ? (
               <div className="pesta5">Pestañina alargadas y con volumen</div>
             ) : null}
+
+            {bestBrowName === "light_brow" && product.varietyNumber === 6 ? (
+              <div className="light_brow">Pomada para cejas Light</div>
+            ) : null}
+            {bestBrowName === "medium_brow" && product.varietyNumber === 6 ? (
+              <div className="medium_brow">Pomada para cejas Medium</div>
+            ) : null}
+            {bestBrowName === "dark_brow" && product.varietyNumber === 6 ? (
+              <div className="dark_brow">Pomada para cejas Dark</div>
+            ) : null}
           </div>
         </div>
-
 
         {/* <figure className="icon-cart">
           <img src="" alt="" />

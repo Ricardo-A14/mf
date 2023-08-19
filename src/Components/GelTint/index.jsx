@@ -5,13 +5,12 @@ import { useContext } from "react";
 import "./GelTint.css";
 
 const GelTint = () => {
-  const { varietyImages3, gelTintName, setGelTintName, setGelTintImg } =
+  const { varietyImages3, setGelTintName, setGelTintImg } =
     useContext(AppContext);
 
   const Gel_red_click = () => {
     setGelTintName("tint_red");
     setGelTintImg(varietyImages3[0]);
-    console.log(gelTintName);
   };
   const Gel_red_over = () => {
     setGelTintName("tint_red");
@@ -24,7 +23,6 @@ const GelTint = () => {
   const Gel_juice_click = () => {
     setGelTintName("tint_juice");
     setGelTintImg(varietyImages3[1]);
-    console.log(gelTintName);
   };
   const Gel_juice_over = () => {
     setGelTintName("tint_juice");
@@ -37,7 +35,6 @@ const GelTint = () => {
   const Gel_pool_click = () => {
     setGelTintName("tint_pool");
     setGelTintImg(varietyImages3[2]);
-    console.log(gelTintName);
   };
   const Gel_pool_over = () => {
     setGelTintName("tint_pool");

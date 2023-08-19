@@ -1,4 +1,3 @@
-import Decimal from "decimal.js";
 
 import { useState, useEffect } from "react";
 
@@ -91,6 +90,9 @@ const esponjasConBase2 = [setSponjas2];
 // UNICORN PALETTE ANY LADY.
 import uniconrPalette_A_L from '../assets/Products/OneProduct/UnicornPaletteAL/unicotnPalette_A_L.png';
 const unicornPalette = [uniconrPalette_A_L];
+// BEST BROWN.
+import light from '../assets/Products/OneProduct/BestBrow/Light.png';
+const bestBrow = [light];
 
 
 
@@ -123,6 +125,7 @@ const useInitialState = () => {
     const [gelTintName, setGelTintName] = useState("");
     const [careLipsName, setCareLipsName] = useState("");
     const [pestaName, setPestaName] = useState("");
+    const [bestBrowName, setBestBrowName] = useState("");
 
     // TEST.
     const [varietyImages, setVarietyImages] = useState("");
@@ -130,18 +133,21 @@ const useInitialState = () => {
     const [varietyImages3, setVarietyImages3] = useState("");
     const [varietyImages4, setVarietyImages4] = useState("");
     const [varietyImages5, setVarietyImages5] = useState("");
+    const [varietyImages6, setVarietyImages6] = useState("");
 
     const [imagesPo, setImagesPo] = useState(null);
     const [imagesBase, setImagesBase] = useState(null);
     const [gelTintImg, setGelTintImg] = useState(null);
     const [careLipsImg, setCareLipsImg] = useState(null);
     const [pestaImg, sePestaImg] = useState(null);
+    const [bestBrowImg, setBestBrowImg] = useState(null);
 
     const [newImages, setNewImages] = useState(polvosCompactos);
     const [newImages2, setNewImages2] = useState(basesBage);
     const [newImages3, setNewImages3] = useState(tintGel);
     const [newImages4, setNewImages4] = useState(careLips);
     const [newImages5, setNewImages5] = useState(pesta);
+    const [newImages6, setNewImages6] = useState(pesta);
 
 
 
@@ -408,6 +414,18 @@ const useInitialState = () => {
                 useVariety: false,
                 varietyNumber: 0
             },
+            {
+                id: 23,
+                title: `Best Brow - Pomada para cejas.`,
+                price: '18.000', // Ruby Rose Price.
+                rPrice: 18_000,
+                description: `Ideal para quienes desean una ceja más marcada y rellena. Tiene alta definición y pigmentación, además de secado rápido.
+                Disponible en tres tonos: Light, Medium y Dark.`,
+                image: bestBrow,
+                category: "maquillaje",
+                useVariety: true,
+                varietyNumber: 6
+            },
 
 
         ];
@@ -527,30 +545,33 @@ const useInitialState = () => {
 
 
         // TEST.
-        varietyImages, setVarietyImages,
-        varietyImages2, setVarietyImages2,
-        varietyImages3, setVarietyImages3,
-        varietyImages4, setVarietyImages4,
-        varietyImages5, setVarietyImages5,
-
-
         nombrePolvos, setNombrePolvos,
         nombreBases, setNombreBases,
         gelTintName, setGelTintName,
         careLipsName, setCareLipsName,
         pestaName, setPestaName,
+        bestBrowName, setBestBrowName,
+
+        varietyImages, setVarietyImages,
+        varietyImages2, setVarietyImages2,
+        varietyImages3, setVarietyImages3,
+        varietyImages4, setVarietyImages4,
+        varietyImages5, setVarietyImages5,
+        varietyImages6, setVarietyImages6,
 
         imagesPo, setImagesPo,
         imagesBase, setImagesBase,
         gelTintImg, setGelTintImg,
         careLipsImg, setCareLipsImg,
         pestaImg, sePestaImg,
+        bestBrowImg, setBestBrowImg,
 
         newImages, setNewImages,
         newImages2, setNewImages2,
         newImages3, setNewImages3,
         newImages4, setNewImages4,
-        newImages5, setNewImages5
+        newImages5, setNewImages5,
+        newImages6, setNewImages6,
 
     }
 }
