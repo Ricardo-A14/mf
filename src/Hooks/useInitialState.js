@@ -95,6 +95,15 @@ import light from '../assets/Products/OneProduct/BestBrow/Light.png';
 import medium from '../assets/Products/OneProduct/BestBrow/Medium.png';
 import dark from '../assets/Products/OneProduct/BestBrow/Dark.png';
 const bestBrow = [light, medium, dark];
+// KIT PULPO.
+import kitPulpo_s from '../assets/Products/OneProduct/KitPulpo/KitPulpo.png';
+const kitPulpo = [kitPulpo_s];
+// BABY BLENDER
+import babySkinBlender_s from '../assets/Products/OneProduct/BabyBlender/BabySkinBlender.png';
+const babySkinBlender = [babySkinBlender_s];
+// BLENDER MAS SOPORTE.
+import b_b_s from '../assets/Products/OneProduct/EsponjaSoporte/EsponjaSoporte.png';
+const beautyBlenderMasSoporte = [b_b_s];
 
 
 
@@ -427,6 +436,39 @@ const useInitialState = () => {
                 category: "maquillaje",
                 useVariety: true,
                 varietyNumber: 6
+            },
+            {
+                id: 24,
+                title: `Beauty Blender con Soporte.`,
+                price: '10.000', // Ruby Rose Price.
+                rPrice: 10_000,
+                description: `Beauty blender + hermoso soporte dorado ideal para evitar suciedad y bacterias..`,
+                image: beautyBlenderMasSoporte,
+                category: "maquillaje",
+                useVariety: false,
+                varietyNumber: 0
+            },
+            {
+                id: 25,
+                title: `Kit Pulpo + Beauty Blender.`,
+                price: '9.000', // Ruby Rose Price.
+                rPrice: 9_000,
+                description: `kit beauty blender Para Maquillaje Y Limpiador Facial Pulpo, Silicona en forma de Medusa pulpo limpiador Facial para limpieza profunda.`,
+                image: kitPulpo,
+                category: "maquillaje",
+                useVariety: false,
+                varietyNumber: 0
+            },
+            {
+                id: 26,
+                title: `.`,
+                price: '9.000', // Ruby Rose Price.
+                rPrice: 9_000,
+                description: `Producto de anta calidad.`,
+                image: babySkinBlender,
+                category: "maquillaje",
+                useVariety: false,
+                varietyNumber: 0
             },
 
 
