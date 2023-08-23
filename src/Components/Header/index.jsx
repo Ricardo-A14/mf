@@ -8,6 +8,7 @@ import AppContext from "../../Context/index";
 
 import MobileMenu from "../MobileMenu";
 
+
 const Header = () => {
   const {
     setSearchByTitle,
