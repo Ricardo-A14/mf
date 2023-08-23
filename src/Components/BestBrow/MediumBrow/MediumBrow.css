@@ -1,0 +1,29 @@
+
+.medium_brow_detail {
+    position: absolute;
+    left: 17%;
+    width: 200px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+@media(max-width: 640px){
+
+    .medium_brow_detail {
+        left: 35%;
+    }
+}
+@media(max-width: 550px){
+
+    .medium_brow_detail {
+        left: 30%;
+    }
+}
+@media(max-width: 320px){
+
+    .medium_brow_detail {
+        left: 20%;
+    }
+}

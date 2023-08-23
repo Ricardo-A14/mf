@@ -32,6 +32,10 @@ import FullExposure from "../Pestanina/FullExposure";
 import Lengthing from "../Pestanina/Lengthing";
 import Unlashed from "../Pestanina/Unlashed";
 
+import LightBrow from "../BestBrow/LightBrow";
+import MediumBrow from "../BestBrow/MediumBrow";
+import DarkBrow from "../BestBrow/DarkBrow";
+
 const ProductDetail = () => {
   const {
     setOpenProductDetail,
@@ -43,24 +47,28 @@ const ProductDetail = () => {
     setVarietyImages3,
     setVarietyImages4,
     setVarietyImages5,
+    setVarietyImages6,
 
     nombrePolvos,
     nombreBases,
     gelTintName,
     careLipsName,
     pestaName,
+    bestBrowName,
 
     imagesPo,
     imagesBase,
     gelTintImg,
     careLipsImg,
     pestaImg,
+    bestBrowImg,
 
     newImages,
     newImages2,
     newImages3,
     newImages4,
     newImages5,
+    newImages6,
   } = useContext(AppContext);
 
   /*-------  UNSTABLE  -------------------- */
@@ -75,7 +83,8 @@ const ProductDetail = () => {
       imagesBase == null &&
       careLipsImg == null &&
       gelTintImg == null &&
-      pestaImg == null
+      pestaImg == null &&
+      bestBrowImg == null
     ) {
       return <img src={productDetails.image[0]} alt={productDetails.title} />;
     } else if (imagesPo) {
@@ -88,6 +97,8 @@ const ProductDetail = () => {
       return <img src={careLipsImg} alt={productDetails.title} />;
     } else if (pestaImg) {
       return <img src={pestaImg} alt={productDetails.title} />;
+    } else if (bestBrowImg) {
+      return <img src={bestBrowImg} alt={productDetails.title} />;
     }
   };
 
@@ -182,6 +193,19 @@ const ProductDetail = () => {
             {pestaName === "pesta5" && productDetails.varietyNumber === 5 ? (
               <Unlashed />
             ) : null}
+
+            {bestBrowName === "light_brow" &&
+            productDetails.varietyNumber === 6 ? (
+              <LightBrow />
+            ) : null}
+            {bestBrowName === "medium_brow" &&
+            productDetails.varietyNumber === 6 ? (
+              <MediumBrow />
+            ) : null}
+            {bestBrowName === "dark_brow" &&
+            productDetails.varietyNumber === 6 ? (
+              <DarkBrow />
+            ) : null}
           </div>
           <div className="variety-container">
             {productDetails.useVariety && <UseVariety />}
@@ -194,6 +218,9 @@ const ProductDetail = () => {
               setVarietyImages4(newImages4)}
             {productDetails.varietyNumber === 5 &&
               setVarietyImages5(newImages5)}
+
+            {productDetails.varietyNumber === 6 &&
+              setVarietyImages6(newImages6)}
           </div>
         </div>
 

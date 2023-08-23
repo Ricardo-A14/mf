@@ -92,7 +92,9 @@ import uniconrPalette_A_L from '../assets/Products/OneProduct/UnicornPaletteAL/u
 const unicornPalette = [uniconrPalette_A_L];
 // BEST BROWN.
 import light from '../assets/Products/OneProduct/BestBrow/Light.png';
-const bestBrow = [light];
+import medium from '../assets/Products/OneProduct/BestBrow/Medium.png';
+import dark from '../assets/Products/OneProduct/BestBrow/Dark.png';
+const bestBrow = [light, medium, dark];
 
 
 
@@ -147,7 +149,7 @@ const useInitialState = () => {
     const [newImages3, setNewImages3] = useState(tintGel);
     const [newImages4, setNewImages4] = useState(careLips);
     const [newImages5, setNewImages5] = useState(pesta);
-    const [newImages6, setNewImages6] = useState(pesta);
+    const [newImages6, setNewImages6] = useState(bestBrow);
 
 
 

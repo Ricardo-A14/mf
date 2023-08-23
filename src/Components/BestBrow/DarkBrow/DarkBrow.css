@@ -1,0 +1,23 @@
+
+.dark_brow_detail {
+    position: absolute;
+    right: 6px;
+    width: 200px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+@media(max-width: 640px){
+
+    .dark_brow_detail {
+        right: 2%;
+    }
+}
+@media(max-width: 320px){
+
+    .dark_brow_detail {
+        right: 2%;
+    }
+}

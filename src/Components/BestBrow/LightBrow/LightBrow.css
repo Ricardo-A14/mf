@@ -1,0 +1,24 @@
+
+.light_brow_detail {
+    position: absolute;
+    left: 6px;
+    width: 190px;
+    height: 18px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+@media(max-width: 640px){
+
+    .light_brow_detail {
+        left: 2%;
+    }
+}
+@media(max-width: 320px){
+
+    .light_brow_detail {
+        left: 2%;
+    }
+}
